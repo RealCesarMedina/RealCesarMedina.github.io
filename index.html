@@ -11,8 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Cabecera mínima -->
   <header class="site-header">
     <a class="brand" href="#">cm</a>
     <nav class="site-nav">
@@ -21,19 +19,15 @@
     </nav>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-grid container">
       <div class="hero-text">
         <h1>Hola, soy <span class="accent">César</span>.</h1>
-        <p class="lead">
-          Economista y analista financiero. Realizo investigación aplicada en economía y finanzas y escribo sobre temas de interés público.
-        </p>
-        <a class="btn" href="https://www.linkedin.com/in/c%C3%A9sar-emilio-medina-tineo/" target="_blank" rel="noopener">
-          Conectar en LinkedIn
-        </a>
+        <p class="lead">Economista y analista financiero. Realizo investigación aplicada en economía y finanzas y escribo sobre temas de interés público.</p>
+        <a class="btn" href="https://www.linkedin.com/in/c%C3%A9sar-emilio-medina-tineo/" target="_blank" rel="noopener">Conectar en LinkedIn</a>
       </div>
       <figure class="hero-avatar">
+        <!-- Si no renombraste tu archivo a assets/avatar.jpg, cambia la ruta aquí -->
         <img src="assets/avatar.jpg" alt="Fotografía de César Medina" />
       </figure>
     </div>
@@ -54,9 +48,7 @@
             <h3>Análisis de expectativas de inflación (República Dominicana)</h3>
             <p>Pruebas de racionalidad, sesgo y persistencia en expectativas de inflación (MCO + Newey–West, BP). Incluye script en R y reporte técnico.</p>
             <div class="chips">
-              <span class="chip">R</span>
-              <span class="chip">Econometría</span>
-              <span class="chip">Inflación</span>
+              <span class="chip">R</span><span class="chip">Econometría</span><span class="chip">Inflación</span>
             </div>
           </div>
           <div class="card-actions">
@@ -64,32 +56,31 @@
           </div>
         </article>
 
-        <!-- Ejemplos próximos -->
+        <!-- Duplicar/editar estas tarjetas para más proyectos -->
         <article class="card">
           <div class="card-body">
             <h3>Optimización de portafolios (NYSE) con R</h3>
-            <p>Simulación Monte Carlo, métricas de riesgo (VaR, CVaR, Sharpe, Treynor) y visualizaciones en Quarto.</p>
-            <div class="chips">
-              <span class="chip">R</span><span class="chip">Quarto</span><span class="chip">Riesgo</span>
-            </div>
+            <p>Simulación Monte Carlo, VaR/CVaR, Sharpe/Treynor y visualizaciones en Quarto.</p>
+            <div class="chips"><span class="chip">R</span><span class="chip">Quarto</span><span class="chip">Riesgo</span></div>
           </div>
-          <div class="card-actions">
-            <span class="btn disabled">Próximamente</span>
-          </div>
+          <div class="card-actions"><span class="btn disabled">Próximamente</span></div>
         </article>
 
         <article class="card">
           <div class="card-body">
             <h3>Modelo predictivo de aprobación de créditos</h3>
             <p>Clasificación con validación cruzada y explicabilidad básica de variables.</p>
-            <div class="chips">
-              <span class="chip">Python</span><span class="chip">ML</span><span class="chip">Crédito</span>
-            </div>
+            <div class="chips"><span class="chip">Python</span><span class="chip">ML</span><span class="chip">Crédito</span></div>
           </div>
-          <div class="card-actions">
-            <span class="btn disabled">Próximamente</span>
-          </div>
+          <div class="card-actions"><span class="btn disabled">Próximamente</span></div>
         </article>
+
+        <!-- coloca aquí más <article class="card">…</article> si los tienes -->
+      </div>
+
+      <!-- Botón mostrar más/menos -->
+      <div class="more-wrap">
+        <button class="btn ghost" id="more-projects">Ver todos los proyectos</button>
       </div>
     </section>
 
@@ -109,14 +100,20 @@
 
         <a class="post" href="https://github.com/RealCesarMedina/inflacion-rd-expectativas" target="_blank" rel="noopener">
           <h3>Expectativas de inflación: ideas detrás del paper</h3>
-          <p>Breve guía de las pruebas de racionalidad y cómo reportarlas en un contexto aplicado a RD.</p>
+          <p>Breve guía de las pruebas de racionalidad y cómo reportarlas en un caso aplicado a RD.</p>
           <span class="meta">Ago 2025 · Econometría</span>
         </a>
+
+        <!-- agrega más <a class="post">…</a> si lo necesitas -->
+      </div>
+
+      <!-- Botón mostrar más/menos -->
+      <div class="more-wrap">
+        <button class="btn ghost" id="more-posts">Ver todas las entradas</button>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER con iconos -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <small>© 2025 César Medina</small>
@@ -136,11 +133,4 @@
         <!-- GitHub -->
         <a class="icon" href="https://github.com/RealCesarMedina" target="_blank" rel="noopener" aria-label="Perfil en GitHub">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
-            <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.05-1.61-4.05-1.61-.55-1.38-1.35-1.74-1.35-1.74-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.25 1.85 1.25 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.63-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.51.12-3.14 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.63.24 2.84.12 3.14.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22 0 1.6-.02 2.88-.02 3.27 0 .32.21.7.82.58A12 12 0 0 0 12 .5z"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
+            <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58 0-.29-.01-
