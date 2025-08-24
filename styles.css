@@ -105,3 +105,11 @@ body{
   .hero-grid{grid-template-columns:1fr}
   .hero{padding:3.5rem 0 2rem}
 }
+
+/* Muestra solo los 6 primeros proyectos y 4 primeros posts por defecto */
+.cards:not(.expanded) > .card:nth-child(n+7) { display: none; }
+.posts:not(.expanded) > .post:nth-child(n+5) { display: none; }
+
+/* Botones centrados */
+.more-wrap { display:flex; justify-content:center; margin-top:1rem; }
+
