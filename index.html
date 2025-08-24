@@ -27,7 +27,7 @@
         <a class="btn" href="https://www.linkedin.com/in/c%C3%A9sar-emilio-medina-tineo/" target="_blank" rel="noopener">Conectar en LinkedIn</a>
       </div>
       <figure class="hero-avatar">
-        <!-- Si no renombraste tu archivo a assets/avatar.jpg, cambia la ruta aquí -->
+        <!-- Cambia la ruta si tu archivo no se llama assets/avatar.jpg -->
         <img src="assets/avatar.jpg" alt="Fotografía de César Medina" />
       </figure>
     </div>
@@ -56,7 +56,7 @@
           </div>
         </article>
 
-        <!-- Duplicar/editar estas tarjetas para más proyectos -->
+        <!-- Duplica estas tarjetas para más proyectos -->
         <article class="card">
           <div class="card-body">
             <h3>Optimización de portafolios (NYSE) con R</h3>
@@ -75,12 +75,12 @@
           <div class="card-actions"><span class="btn disabled">Próximamente</span></div>
         </article>
 
-        <!-- coloca aquí más <article class="card">…</article> si los tienes -->
+        <!-- agrega más <article class="card">…</article> si lo necesitas -->
       </div>
 
-      <!-- Botón mostrar más/menos -->
+      <!-- Enlace “Ver todos los proyectos” -->
       <div class="more-wrap">
-        <button class="btn ghost" id="more-projects">Ver todos los proyectos</button>
+        <a class="btn ghost" href="proyectos/index.html">Ver todos los proyectos</a>
       </div>
     </section>
 
@@ -107,9 +107,9 @@
         <!-- agrega más <a class="post">…</a> si lo necesitas -->
       </div>
 
-      <!-- Botón mostrar más/menos -->
+      <!-- Enlace “Ver todas las entradas” -->
       <div class="more-wrap">
-        <button class="btn ghost" id="more-posts">Ver todas las entradas</button>
+        <a class="btn ghost" href="blog/index.html">Ver todas las entradas</a>
       </div>
     </section>
   </main>
@@ -139,31 +139,5 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    // Mostrar más / menos
-    function setupShowMore(listSelector, btnId, limit){
-      const list = document.querySelector(listSelector);
-      const btn  = document.getElementById(btnId);
-      if (!list || !btn) return;
-
-      const items = [...list.children];
-      if (items.length <= limit) { btn.parentElement.style.display = 'none'; return; }
-
-      function setLabel(){
-        btn.textContent = list.classList.contains('expanded')
-          ? 'Mostrar menos'
-          : (listSelector==='.cards' ? 'Ver todos los proyectos' : 'Ver todas las entradas');
-      }
-      setLabel();
-
-      btn.addEventListener('click', () => {
-        list.classList.toggle('expanded');
-        setLabel();
-      });
-    }
-    setupShowMore('.cards','more-projects',6);
-    setupShowMore('.posts','more-posts',4);
-  </script>
 </body>
 </html>
