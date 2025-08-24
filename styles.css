@@ -1,79 +1,63 @@
 /* ===== Base: Dark only ===== */
 :root{
-  --bg:#0b0d10;        /* fondo base */
-  --surface:#111418;   /* tarjetas */
-  --border:#1f232b;    /* bordes suaves */
-  --text:#e5e7eb;      /* texto principal */
-  --muted:#9ca3af;     /* texto secundario */
-  --accent:#60a5fa;    /* azul de acento */
+  --bg:#0b0d10;
+  --surface:#111418;
+  --border:#1f232b;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --accent:#60a5fa;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
   font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color:var(--text); background:var(--bg);
-  /* sutil cuadrícula de fondo */
   background-image:
     radial-gradient(ellipse at 20% -20%, rgba(96,165,250,.12), transparent 60%),
     linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);
   background-size: 100% 100%, 48px 48px, 48px 48px;
-  background-position: 0 0, 0 0, 0 0;
-  line-height:1.65;
 }
-
-/* ===== Header ===== */
 .container{max-width:1120px;margin:0 auto;padding:0 1.25rem}
+
+/* Header */
 .site-header{
   position:sticky; top:0; z-index:20; backdrop-filter:saturate(180%) blur(6px);
   background:rgba(11,13,16,.7); border-bottom:1px solid var(--border);
-  display:flex; align-items:center; justify-content:space-between;
-  padding:.7rem 1.25rem;
+  display:flex; align-items:center; justify-content:space-between; padding:.7rem 1.25rem;
 }
-.brand{
-  font-weight:800; letter-spacing:.5px; text-decoration:none; color:var(--text);
-  background:linear-gradient(90deg, var(--text), #cbd5e1); -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-}
-.site-nav a{
-  color:var(--muted); text-decoration:none; margin-left:1rem; font-weight:600;
-}
+.brand{font-weight:800; letter-spacing:.5px; text-decoration:none; color:var(--text);
+  background:linear-gradient(90deg, var(--text), #cbd5e1); -webkit-background-clip:text; -webkit-text-fill-color:transparent;}
+.site-nav a{color:var(--muted); text-decoration:none; margin-left:1rem; font-weight:600}
 .site-nav a:hover{color:var(--text)}
 
-/* ===== Hero ===== */
+/* Hero */
 .hero{padding:4.5rem 0 3rem}
 .hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:2rem; align-items:center}
 .hero-text h1{font-size:clamp(28px,6vw,48px); line-height:1.1; margin:.2rem 0 1rem}
 .accent{color:var(--accent)}
 .lead{color:var(--muted); font-size:1.1rem; margin:0 0 1.2rem}
-.btn{
-  display:inline-block; padding:.7rem 1rem; font-weight:700; text-decoration:none;
-  color:#0b0d10; background:var(--accent); border-radius:12px; border:1px solid transparent;
-}
+.btn{display:inline-block; padding:.7rem 1rem; font-weight:700; text-decoration:none;
+  color:#0b0d10; background:var(--accent); border-radius:12px; border:1px solid transparent;}
 .btn.ghost{background:transparent; color:var(--text); border-color:var(--border)}
 .btn.disabled{opacity:.55; pointer-events:none}
 
-.hero-avatar{
-  justify-self:center; width:min(360px,85%); aspect-ratio:1/1;
+.hero-avatar{justify-self:center; width:min(360px,85%); aspect-ratio:1/1;
   background:var(--surface); border:1px dashed var(--border); border-radius:24px;
   display:grid; place-items:center; padding:.6rem;
-  box-shadow:inset 0 0 0 1px rgba(255,255,255,.02), 0 10px 30px rgba(0,0,0,.35);
-}
-.hero-avatar img{
-  width:100%; height:100%; object-fit:cover; border-radius:18px;
-}
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.02), 0 10px 30px rgba(0,0,0,.35);}
+.hero-avatar img{width:100%; height:100%; object-fit:cover; border-radius:18px}
 
-/* ===== Sections ===== */
+/* Sections */
 .section{padding:2.5rem 0}
 .section-head{display:flex; align-items:flex-end; justify-content:space-between; gap:1rem; margin-bottom:1rem}
 .section h2{font-size:1.5rem; margin:0}
 .muted{color:var(--muted)}
 
-/* ===== Cards (Proyectos) ===== */
+/* Cards (Proyectos) */
 .cards{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1rem}
-.card{
-  background:var(--surface); border:1px solid var(--border); border-radius:16px; display:flex; flex-direction:column;
-  transition:transform .15s ease, box-shadow .2s ease, border-color .2s ease;
-}
+.card{background:var(--surface); border:1px solid var(--border); border-radius:16px; display:flex; flex-direction:column;
+  transition:transform .15s ease, box-shadow .2s ease, border-color .2s ease;}
 .card:hover{transform:translateY(-2px); border-color:#2a3441; box-shadow:0 12px 28px rgba(0,0,0,.28)}
 .card-body{padding:1rem}
 .card-body h3{margin:.1rem 0 .4rem; font-size:1.1rem}
@@ -82,34 +66,29 @@ body{
 .chip{border:1px solid var(--border); background:#0e1116; padding:.2rem .55rem; border-radius:999px; font-size:.85rem; color:#cbd5e1}
 .card-actions{padding:0 1rem 1rem}
 
-/* ===== Posts (Blog) ===== */
+/* Posts (Blog) */
 .posts{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1rem}
-.post{
-  border:1px solid var(--border); border-radius:16px; padding:1rem; background:#0f1318; text-decoration:none; color:var(--text);
-  transition:border-color .2s ease, transform .15s ease;
-}
+.post{border:1px solid var(--border); border-radius:16px; padding:1rem; background:#0f1318; text-decoration:none; color:var(--text);
+  transition:border-color .2s ease, transform .15s ease;}
 .post:hover{border-color:#2a3441; transform:translateY(-2px)}
 .post h3{margin:.1rem 0 .35rem; font-size:1.06rem}
 .post p{margin:.3rem 0 .5rem; color:var(--muted)}
 .meta{color:#a3aab4; font-size:.9rem}
 
-/* ===== Footer ===== */
+/* Home: mostrar sólo 6 proyectos y 4 posts */
+.cards > .card:nth-child(n+7){display:none}
+.posts > .post:nth-child(n+5){display:none}
+.more-wrap{display:flex; justify-content:center; margin-top:1rem}
+
+/* Footer */
 .site-footer{border-top:1px solid var(--border); padding:1.2rem 0; margin-top:2rem}
 .footer-grid{display:flex; align-items:center; justify-content:space-between; gap:.75rem}
 .icons{display:flex; gap:.6rem}
 .icon{color:#cbd5e1; opacity:.85}
 .icon:hover{opacity:1}
 
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width: 860px){
   .hero-grid{grid-template-columns:1fr}
   .hero{padding:3.5rem 0 2rem}
 }
-
-/* Muestra solo los 6 primeros proyectos y 4 primeros posts por defecto */
-.cards:not(.expanded) > .card:nth-child(n+7) { display: none; }
-.posts:not(.expanded) > .post:nth-child(n+5) { display: none; }
-
-/* Botones centrados */
-.more-wrap { display:flex; justify-content:center; margin-top:1rem; }
-
