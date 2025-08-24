@@ -1,1 +1,146 @@
-<!-- temporal: se reemplaza en el siguiente paso -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>César Medina | Portafolio y Blog</title>
+  <meta name="description" content="Portafolio y blog de César Medina: proyectos cuantitativos en economía y finanzas y notas de interés público.">
+  <meta name="theme-color" content="#0b0d10">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Cabecera mínima -->
+  <header class="site-header">
+    <a class="brand" href="#">cm</a>
+    <nav class="site-nav">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#blog">Blog</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid container">
+      <div class="hero-text">
+        <h1>Hola, soy <span class="accent">César</span>.</h1>
+        <p class="lead">
+          Economista y analista financiero. Realizo investigación aplicada en economía y finanzas y escribo sobre temas de interés público.
+        </p>
+        <a class="btn" href="https://www.linkedin.com/in/c%C3%A9sar-emilio-medina-tineo/" target="_blank" rel="noopener">
+          Conectar en LinkedIn
+        </a>
+      </div>
+      <figure class="hero-avatar">
+        <img src="assets/avatar.jpg" alt="Fotografía de César Medina" />
+      </figure>
+    </div>
+  </section>
+
+  <main>
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="container section">
+      <div class="section-head">
+        <h2>Mis Proyectos</h2>
+        <p class="muted">Algunos trabajos recientes. Más en mi GitHub.</p>
+      </div>
+
+      <div class="cards">
+        <!-- Proyecto real -->
+        <article class="card">
+          <div class="card-body">
+            <h3>Análisis de expectativas de inflación (República Dominicana)</h3>
+            <p>Pruebas de racionalidad, sesgo y persistencia en expectativas de inflación (MCO + Newey–West, BP). Incluye script en R y reporte técnico.</p>
+            <div class="chips">
+              <span class="chip">R</span>
+              <span class="chip">Econometría</span>
+              <span class="chip">Inflación</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a class="btn ghost" href="https://github.com/RealCesarMedina/inflacion-rd-expectativas" target="_blank" rel="noopener">Ver repositorio</a>
+          </div>
+        </article>
+
+        <!-- Ejemplos próximos -->
+        <article class="card">
+          <div class="card-body">
+            <h3>Optimización de portafolios (NYSE) con R</h3>
+            <p>Simulación Monte Carlo, métricas de riesgo (VaR, CVaR, Sharpe, Treynor) y visualizaciones en Quarto.</p>
+            <div class="chips">
+              <span class="chip">R</span><span class="chip">Quarto</span><span class="chip">Riesgo</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <span class="btn disabled">Próximamente</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-body">
+            <h3>Modelo predictivo de aprobación de créditos</h3>
+            <p>Clasificación con validación cruzada y explicabilidad básica de variables.</p>
+            <div class="chips">
+              <span class="chip">Python</span><span class="chip">ML</span><span class="chip">Crédito</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <span class="btn disabled">Próximamente</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="container section">
+      <div class="section-head">
+        <h2>Blog personal</h2>
+        <p class="muted">Notas y apuntes breves sobre economía, finanzas y datos.</p>
+      </div>
+
+      <div class="posts">
+        <a class="post" href="blog/2025-08-bienvenida.html">
+          <h3>Bienvenida: por qué escribo</h3>
+          <p>Qué publicaré aquí y cómo conecto la investigación aplicada con temas de interés público.</p>
+          <span class="meta">Ago 2025 · Editorial</span>
+        </a>
+
+        <a class="post" href="https://github.com/RealCesarMedina/inflacion-rd-expectativas" target="_blank" rel="noopener">
+          <h3>Expectativas de inflación: ideas detrás del paper</h3>
+          <p>Breve guía de las pruebas de racionalidad y cómo reportarlas en un contexto aplicado a RD.</p>
+          <span class="meta">Ago 2025 · Econometría</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER con iconos -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <small>© 2025 César Medina</small>
+      <div class="icons">
+        <!-- X -->
+        <a class="icon" href="https://x.com/realCesarMedina" target="_blank" rel="noopener" aria-label="Perfil en X">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+            <path d="M18.244 2H21l-6.56 7.49L22 22h-6.828l-4.8-6.27L4.8 22H2l7.04-8.02L2 2h6.828l4.32 5.64L18.244 2Zm-2.396 18.2h2.002L8.236 3.718H6.234L15.848 20.2Z"/>
+          </svg>
+        </a>
+        <!-- LinkedIn -->
+        <a class="icon" href="https://www.linkedin.com/in/c%C3%A9sar-emilio-medina-tineo/" target="_blank" rel="noopener" aria-label="Perfil en LinkedIn">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zm7.5 0h3.84v1.98h.05c.54-1.02 1.86-2.1 3.83-2.1C20.62 8.38 23 10.52 23 14.4V23h-4v-7.4c0-1.77-.03-4.06-2.47-4.06-2.47 0-2.85 1.93-2.85 3.93V23h-4V8.5z"/>
+          </svg>
+        </a>
+        <!-- GitHub -->
+        <a class="icon" href="https://github.com/RealCesarMedina" target="_blank" rel="noopener" aria-label="Perfil en GitHub">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.05-1.61-4.05-1.61-.55-1.38-1.35-1.74-1.35-1.74-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.25 1.85 1.25 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.63-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.51.12-3.14 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.63.24 2.84.12 3.14.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22 0 1.6-.02 2.88-.02 3.27 0 .32.21.7.82.58A12 12 0 0 0 12 .5z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
