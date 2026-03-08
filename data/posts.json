@@ -1,1 +1,35 @@
-
+[
+  {
+    "id": 1,
+    "type": "proyecto",
+    "title": "Interacción dinámica entre indicadores macroeconómicos y activos financieros",
+    "date": "2024-11-15",
+    "description": "Análisis aplicado sobre la relación entre variables macroeconómicas y el comportamiento de los activos financieros mediante un enfoque econométrico.",
+    "tags": ["Economía", "Macroeconomía", "Econometría"],
+    "url": "./assets/docs/proyecto-1.pdf",
+    "secondaryUrl": "",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "type": "opinion",
+    "title": "Reflexiones sobre el entorno económico internacional y sus efectos locales",
+    "date": "2025-03-21",
+    "description": "Comentario analítico sobre acontecimientos internacionales y su posible transmisión hacia economías pequeñas y abiertas.",
+    "tags": ["Opinión", "Coyuntura", "Análisis"],
+    "url": "./assets/docs/opinion-1.pdf",
+    "secondaryUrl": "",
+    "featured": false
+  },
+  {
+    "id": 3,
+    "type": "proyecto",
+    "title": "Evolución del dinero en circulación y actividad económica",
+    "date": "2023-09-02",
+    "description": "Trabajo de investigación sobre la evolución del dinero en circulación y su lectura desde una perspectiva económica aplicada.",
+    "tags": ["Investigación", "Política monetaria"],
+    "url": "./assets/docs/proyecto-2.pdf",
+    "secondaryUrl": "",
+    "featured": false
+  }
+]
