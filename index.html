@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | César Medina</title>
+  <meta name="description" content="Portafolio personal de César Medina: proyectos y artículos de opinión." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">César Medina</a>
+      <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#publicaciones">Publicaciones</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="eyebrow">PORTAFOLIO PERSONAL</span>
+          <h1>Proyectos y opinión en un espacio profesional, limpio y visualmente sólido.</h1>
+          <p>
+            Un portafolio diseñado para presentar trabajos de investigación, análisis y publicaciones de opinión
+            con una estética minimalista, elegante e interactiva.
+          </p>
+          <div class="hero-buttons">
+            <a href="#publicaciones" class="btn btn-primary">Ver publicaciones</a>
+            <a href="#contacto" class="btn btn-secondary">Contacto</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <p class="card-label">Publicación destacada</p>
+          <h2 id="featured-title">Interacción dinámica entre indicadores macroeconómicos y activos financieros</h2>
+          <p id="featured-date">15 de noviembre de 2024</p>
+          <p id="featured-description">
+            Análisis aplicado sobre la relación entre variables macroeconómicas y el comportamiento de los activos financieros.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="publicaciones" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">ARCHIVO</span>
+            <h2>Proyectos y opinión</h2>
+            <p>
+              Explora tus publicaciones por tipo, fecha o palabra clave.
+            </p>
+          </div>
+          <button class="btn btn-primary" id="openFormBtn">Nueva publicación</button>
+        </div>
+
+        <div class="filters">
+          <input type="text" id="searchInput" placeholder="Buscar por título o tema..." />
+          <select id="typeFilter">
+            <option value="todos">Todos</option>
+            <option value="proyecto">Proyectos</option>
+            <option value="opinion">Opinión</option>
+          </select>
+        </div>
+
+        <div id="postsContainer" class="posts-grid"></div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section section-alt">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">SOBRE MÍ</span>
+          <h2>Una presentación clara y profesional</h2>
+          <p>
+            Aquí podrás hablar brevemente sobre tu perfil, tus intereses de investigación, tus líneas de análisis
+            y el propósito de este portafolio. La idea es que el contenido sea el protagonista.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Lo que incluye esta página</h3>
+          <ul>
+            <li>Diseño azul y blanco, limpio y elegante</li>
+            <li>Sección de proyectos y opinión</li>
+            <li>Buscador y filtro por tipo</li>
+            <li>Tarjetas modernas para publicaciones</li>
+            <li>Formulario para agregar entradas con fecha editable</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container contact-box">
+        <div>
+          <span class="eyebrow">CONTACTO</span>
+          <h2>Conecta conmigo</h2>
+          <p>Puedes colocar aquí tu correo, LinkedIn y otros enlaces profesionales.</p>
+        </div>
+        <div class="contact-items">
+          <p><strong>Nombre:</strong> César Medina</p>
+          <p><strong>Correo:</strong> tucorreo@ejemplo.com</p>
+          <p><strong>LinkedIn:</strong> Tu perfil aquí</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal hidden" id="postModal">
+    <div class="modal-content">
+      <button class="close-btn" id="closeFormBtn">&times;</button>
+      <h3>Agregar publicación</h3>
+      <p class="modal-text">
+        Puedes asignar manualmente la fecha real de elaboración o publicación de trabajos antiguos.
+      </p>
+
+      <form id="postForm">
+        <label>Tipo</label>
+        <select id="postType" required>
+          <option value="proyecto">Proyecto</option>
+          <option value="opinion">Opinión</option>
+        </select>
+
+        <label>Título</label>
+        <input type="text" id="postTitle" required />
+
+        <label>Fecha</label>
+        <input type="date" id="postDate" required />
+
+        <label>Descripción</label>
+        <textarea id="postDescription" rows="4" required></textarea>
+
+        <label>Etiquetas separadas por coma</label>
+        <input type="text" id="postTags" placeholder="Economía, Finanzas, Análisis" />
+
+        <button type="submit" class="btn btn-primary full-width">Guardar publicación</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
