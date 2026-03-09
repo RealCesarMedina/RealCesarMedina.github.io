@@ -24,11 +24,11 @@
   {
     "id": 3,
     "type": "proyecto",
-    "title": "Evolución del dinero en circulación y actividad económica",
+    "title": "Interacción Dinámica entre Indicadores Macroeconómicos y el Precio de los Activos Financieros en el Mercado de Valores Dominicano",
     "date": "2025-10-13",
-    "description": "Trabajo de investigación sobre la evolución del dinero en circulación y su lectura desde una perspectiva económica aplicada.",
-    "tags": ["Investigación", "Política monetaria"],
-    "url": "./assets/docs/proyecto-2.pdf",
+    "description": "Análisis econométrico de la relación dinámica entre variables macroeconómicas y el mercado de valores dominicano durante el período 2014-2024.",
+    "tags": ["Investigación", "Macroeconomía", "Mercado de Valores"],
+    "url": "./assets/docs/Interacción Dinámica entre Indicadores Macroeconómicos y el Precio de los Activos Financieros en el Mercado de Valores Dominicano.pdf",
     "secondaryUrl": "",
     "featured": false
   }
