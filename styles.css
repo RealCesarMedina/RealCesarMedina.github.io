@@ -409,8 +409,10 @@ a {
 .contact-box {
   padding: 34px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+  width: 100%;
+  max-width: 900px;
 }
 
 .contact-items p + p {
