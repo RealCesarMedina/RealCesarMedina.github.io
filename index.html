@@ -3,148 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>César E. Medina | Portafolio</title>
-  <meta name="description" content="Portafolio de proyectos y opinión de César Medina." />
+  <title>César Medina Tineo | Portafolio</title>
+  <meta name="description" content="Portafolio de proyectos y opiniones de César Medina Tineo." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <div class="container nav">
-      <a href="#inicio" class="logo">César Medina</a>
-      <nav class="menu">
-        <a href="#inicio">Inicio</a>
-        <a href="#publicaciones">Publicaciones</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </div>
-  </header>
+  <main class="page">
+    <section class="intro">
+      <h1>César Medina Tineo</h1>
+      <p class="intro-text">
+        Soy economista egresado del INTEC y actualmente curso la maestría en Finanzas con concentración en Mercado de Capitales de UNIBE. Me apasiona la economía, las finanzas y el análisis de los temas que influyen en la realidad nacional e internacional. En este espacio comparto proyectos y escritos de opinión que reflejan esos intereses y mi forma de entender el entorno desde una mirada crítica y objetiva.
+      </p>
+    </section>
 
-  <main>
-    <section id="inicio" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">PORTAFOLIO PERSONAL</span>
-          <h1>Proyectos y opinión en una presentación sobria, profesional y visualmente sólida.</h1>
-          <p>
-            Un espacio para reunir investigaciones, análisis y escritos de opinión con un diseño limpio,
-            elegante y fácil de actualizar desde GitHub.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#publicaciones">Explorar publicaciones</a>
-            <a class="btn btn-secondary" href="#contacto">Contacto</a>
-          </div>
-
-          <div class="hero-metrics">
-            <div class="metric">
-              <strong id="count-all">0</strong>
-              <span>Publicaciones</span>
-            </div>
-            <div class="metric">
-              <strong id="count-projects">0</strong>
-              <span>Proyectos</span>
-            </div>
-            <div class="metric">
-              <strong id="count-opinion">0</strong>
-              <span>Opinión</span>
-            </div>
-          </div>
-        </div>
-
-        <aside class="featured-card">
-          <p class="featured-label">Publicación destacada</p>
-          <h2 id="featured-title">Cargando...</h2>
-          <p class="featured-date" id="featured-date"></p>
-          <p class="featured-description" id="featured-description"></p>
-          <a id="featured-link" class="btn btn-primary featured-btn" href="#" target="_blank" rel="noopener noreferrer">Abrir publicación</a>
-        </aside>
+    <section class="selector-section" aria-label="Tipos de publicaciones">
+      <div class="selector">
+        <button class="selector-btn active" data-tab="proyecto" aria-selected="true">
+          Proyectos
+        </button>
+        <button class="selector-btn" data-tab="opinion" aria-selected="false">
+          Opiniones
+        </button>
       </div>
     </section>
 
-    <section id="publicaciones" class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">ARCHIVO</span>
-            <h2>Proyectos y opinión</h2>
-            <p>Filtra, busca y abre cada publicación con su fecha original editable.</p>
-          </div>
-        </div>
+    <section class="content-section">
+      <div id="postsList" class="posts-list"></div>
 
-        <div class="toolbar">
-          <input id="searchInput" type="text" placeholder="Buscar por título, tema o etiqueta..." />
-          <select id="typeFilter">
-            <option value="todos">Todos</option>
-            <option value="proyecto">Proyectos</option>
-            <option value="opinion">Opinión</option>
-          </select>
-          <select id="sortFilter">
-            <option value="date-desc">Más recientes</option>
-            <option value="date-asc">Más antiguos</option>
-            <option value="title-asc">Título A-Z</option>
-            <option value="title-desc">Título Z-A</option>
-          </select>
-        </div>
-
-        <div id="postsContainer" class="posts-grid"></div>
-        <div id="emptyState" class="empty-state hidden">
-          <h3>No se encontraron publicaciones</h3>
-          <p>Prueba otro término de búsqueda o ajusta los filtros.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="sobre-mi" class="section section-alt">
-      <div class="container about-grid">
-        <div>
-          <span class="eyebrow">SOBRE MÍ</span>
-          <h2>Economía, análisis e investigación</h2>
-          <p>
-           Soy economista egresado del INTEC y actualmente curso una maestría en Finanzas con concentración en Mercado de Capitales en UNIBE. Me interesa la economía, las finanzas y el análisis de los temas que influyen en la realidad nacional e internacional. 
-            En este espacio comparto proyectos y escritos de opinión que reflejan esos intereses y mi forma de entender el entorno desde una perspectiva seria y reflexiva.
-          </p>
-        </div>
-
-        <div class="info-card">
-          <h3>Ventajas de esta versión</h3>
-          <ul>
-            <li>Las publicaciones quedan guardadas de verdad.</li>
-            <li>La fecha se define manualmente en cada entrada.</li>
-            <li>Puedes enlazar PDF, Google Drive o páginas externas.</li>
-            <li>La estructura es limpia y fácil de mantener.</li>
-            <li>Escala bien a medida que publiques más trabajos.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="contacto" class="section">
-      <div class="container contact-box">
-        <div>
-          <span class="eyebrow">CONTACTO</span>
-          <h2>Conecta conmigo</h2>
-          <p>Añade aquí tus canales profesionales principales.</p>
-        </div>
-
-        <div class="contact-items">
-          <p><strong>Nombre:</strong> César Medina</p>
-          <p><strong>Correo:</strong> realcesarmedina@gmail.com</p>
-          <p><strong>LinkedIn:</strong> https://www.linkedin.com/in/c%C3%A9sar-emilio-medina-tineo/</p>
-          <p><strong>Ubicación:</strong> República Dominicana</p>
-        </div>
+      <div id="emptyState" class="empty-state hidden">
+        <p>No hay publicaciones en esta categoría todavía.</p>
       </div>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> César Medina. Todos los derechos reservados.</p>
-    </div>
-  </footer>
 
   <script src="script.js"></script>
 </body>
