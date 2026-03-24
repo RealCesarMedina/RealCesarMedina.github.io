@@ -10,16 +10,16 @@
     "secondaryUrl": "",
     "featured": true
   },
-  {
-    "id": 2,
-    "type": "opinion",
-    "title": "El petróleo bajo tensión geopolítica",
-    "date": "2026-03-08",
-    "description": "Análisis del impacto de las tensiones geopolíticas en el precio del petróleo y sus implicaciones macroeconómicas para la economía global y la República Dominicana.",
-    "tags": ["Opinión", "Petróleo", "Análisis"],
-    "url": "https://cesaremedina.blogspot.com/2026/03/el-petroleo-bajo-tension-geopolitica.html",
-    "featured": false
-  },
+ {
+  "id": 2,
+  "type": "opinion",
+  "title": "Camino a la incertidumbre",
+  "date": "2026-03-24",
+  "description": "Reflexión sobre cómo las favorables proyecciones de crecimiento para la economía dominicana en 2026 quedaron condicionadas por el deterioro del entorno internacional, el conflicto en torno a Irán, la volatilidad del petróleo y la fragilidad de las expectativas macroeconómicas.",
+  "tags": ["Opinión", "Economía dominicana", "Petróleo", "Geopolítica", "Incertidumbre"],
+  "url": "https://cesaremedina.blogspot.com/2026/03/camino-la-incertidumbre.html",
+  "featured": true
+},
   {
     "id": 3,
     "type": "proyecto",
