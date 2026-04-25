@@ -3,130 +3,266 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>César Medina Tineo | Portafolio</title>
-  <meta name="description" content="Portafolio de proyectos y opinión de César Medina." />
-  <link rel="stylesheet" href="styles.css" />
+  <title>César Medina Tineo — Economista &amp; Analista de Mercados</title>
+  <meta name="description" content="Portafolio profesional de César Medina Tineo: investigación económica, análisis de mercados de capitales y opinión sobre la coyuntura nacional e internacional." />
+  <meta name="author" content="César Medina Tineo" />
+  <meta name="theme-color" content="#0e1726" />
+
+  <meta property="og:title" content="César Medina Tineo — Economista &amp; Analista" />
+  <meta property="og:description" content="Investigación económica, análisis financiero y opinión sobre la realidad nacional e internacional." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_DO" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container nav">
-      <a href="#inicio" class="logo">César Medina</a>
-      <nav class="menu">
-        <a href="#inicio">Inicio</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Inicio">
+        <span class="brand-mark" aria-hidden="true">CM</span>
+        <span class="brand-text">
+          <strong>César Medina</strong>
+          <em>Economista · Investigador</em>
+        </span>
+      </a>
+      <nav class="primary-nav" aria-label="Navegación principal">
+        <a href="#sobre-mi">Perfil</a>
+        <a href="#experticia">Áreas</a>
         <a href="#publicaciones">Publicaciones</a>
-        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#trayectoria">Trayectoria</a>
         <a href="#contacto">Contacto</a>
       </nav>
+      <a href="#contacto" class="header-cta">Hablemos <span aria-hidden="true">→</span></a>
     </div>
   </header>
 
-  <main>
-    <section id="inicio" class="hero">
-      <div class="container hero-grid">
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
         <div class="hero-copy">
-          <span class="eyebrow">PORTAFOLIO PERSONAL</span>
-          <h1>Proyectos y opinión</h1>
-          <p>
-            Aquí presento mis proyectos de investigación y opiniones de actualidad desde una perspectiva crítica y objetiva.
+          <span class="eyebrow"><span class="dot" aria-hidden="true"></span> Portafolio profesional</span>
+          <h1 class="display">
+            Investigación económica<br />
+            con <em>perspectiva crítica</em><br />
+            y rigor analítico.
+          </h1>
+          <p class="lede">
+            Soy <strong>César Emilio Medina Tineo</strong>, economista enfocado en macroeconomía, mercado de capitales y política monetaria. Documento aquí mis investigaciones académicas y análisis sobre la coyuntura nacional e internacional.
           </p>
-
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#publicaciones">Explorar publicaciones</a>
-            <a class="btn btn-secondary" href="#contacto">Contacto</a>
+            <a class="btn btn-primary" href="#publicaciones">Ver publicaciones</a>
+            <a class="btn btn-ghost" href="#sobre-mi">Conocer perfil</a>
           </div>
 
-          <div class="hero-metrics">
-            <div class="metric">
-              <strong id="count-all">0</strong>
-              <span>Publicaciones</span>
+          <dl class="hero-stats">
+            <div>
+              <dd id="count-all">—</dd>
+              <dt>Publicaciones</dt>
             </div>
-            <div class="metric">
-              <strong id="count-projects">0</strong>
-              <span>Proyectos</span>
+            <div>
+              <dd id="count-projects">—</dd>
+              <dt>Investigación</dt>
             </div>
-            <div class="metric">
-              <strong id="count-opinion">0</strong>
-              <span>Opinión</span>
+            <div>
+              <dd id="count-opinion">—</dd>
+              <dt>Opinión</dt>
             </div>
-          </div>
+          </dl>
         </div>
 
-        <aside class="featured-card">
-          <p class="featured-label">Publicación destacada</p>
-          <h2 id="featured-title">Cargando...</h2>
-          <p class="featured-date" id="featured-date"></p>
-          <p class="featured-description" id="featured-description"></p>
-          <a id="featured-link" class="btn btn-primary featured-btn" href="#" target="_blank" rel="noopener noreferrer">Abrir publicación</a>
+        <aside class="featured" aria-labelledby="featured-title">
+          <div class="featured-tag">Publicación destacada</div>
+          <p class="featured-meta" id="featured-meta">—</p>
+          <h2 class="featured-title" id="featured-title">Cargando…</h2>
+          <p class="featured-desc" id="featured-description"></p>
+          <div class="featured-tags" id="featured-tags"></div>
+          <a id="featured-link" class="featured-cta" href="#" target="_blank" rel="noopener noreferrer">
+            Leer publicación <span aria-hidden="true">→</span>
+          </a>
         </aside>
       </div>
     </section>
 
-    <section id="publicaciones" class="section">
+    <!-- ABOUT -->
+    <section id="sobre-mi" class="section">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">ARCHIVO</span>
-            <h2>Proyectos y opinión</h2>
+        <header class="section-head">
+          <span class="section-num">01</span>
+          <span class="eyebrow">Perfil</span>
+          <h2>Economista formado en investigación cuantitativa, con interés en mercados financieros y política económica.</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="bio">
+            <p>
+              Soy economista egresado del <strong>Instituto Tecnológico de Santo Domingo (INTEC)</strong> y actualmente curso la <strong>Maestría en Finanzas con concentración en Mercado de Capitales</strong> en la <strong>Universidad Iberoamericana (UNIBE)</strong>.
+            </p>
+            <p>
+              Mi trabajo se centra en la <em>economía aplicada</em>: el análisis de expectativas de inflación, las dinámicas entre indicadores macroeconómicos y mercados financieros, y el seguimiento de la coyuntura dominicana e internacional. Combino método econométrico con una lectura crítica del entorno.
+            </p>
+            <p>
+              Este portafolio reúne mis investigaciones formales y artículos de opinión, pensados como contribución al debate público sobre temas económicos y financieros.
+            </p>
           </div>
-        </div>
 
-        <div class="toolbar">
-          <input id="searchInput" type="text" placeholder="Buscar por título, tema o etiqueta..." />
-          <select id="typeFilter">
-            <option value="todos">Todos</option>
-            <option value="proyecto">Proyectos</option>
-            <option value="opinion">Opinión</option>
-          </select>
-          <select id="sortFilter">
-            <option value="date-desc">Más recientes</option>
-            <option value="date-asc">Más antiguos</option>
-            <option value="title-asc">Título A-Z</option>
-            <option value="title-desc">Título Z-A</option>
-          </select>
-        </div>
-
-        <div id="postsContainer" class="posts-grid"></div>
-        <div id="emptyState" class="empty-state hidden">
-          <h3>No se encontraron publicaciones</h3>
-          <p>Prueba otro término de búsqueda o ajusta los filtros.</p>
+          <aside class="bio-card">
+            <h3>Ficha profesional</h3>
+            <dl class="info-list">
+              <div><dt>Formación</dt><dd>Lic. en Economía · INTEC</dd></div>
+              <div><dt>Posgrado</dt><dd>MSc. Finanzas, Mercado de Capitales · UNIBE <span class="status">en curso</span></dd></div>
+              <div><dt>Áreas</dt><dd>Macroeconomía · Econometría · Mercados</dd></div>
+              <div><dt>Idiomas</dt><dd>Español · Inglés</dd></div>
+              <div><dt>Ubicación</dt><dd>República Dominicana</dd></div>
+            </dl>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section id="sobre-mi" class="section section-alt">
-      <div class="container about-grid">
-        <div>
-          <span class="eyebrow">SOBRE MÍ</span>
-          <h2>Economía, análisis e investigación</h2>
-          <p>
-            Soy economista egresado del INTEC y actualmente curso la maestría en Finanzas con concentración en Mercado de Capitales de UNIBE. Me apasiona la economía, las finanzas y el análisis de los temas que influyen en la realidad nacional e internacional. 
-            En este espacio comparto proyectos y escritos de opinión que reflejan esos intereses y mi forma de entender el entorno desde una perspectiva crítica y objetiva.
-          </p>
+    <!-- EXPERTISE -->
+    <section id="experticia" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">02</span>
+          <span class="eyebrow">Áreas de trabajo</span>
+          <h2>Dominios de investigación y análisis.</h2>
+        </header>
+
+        <ul class="expertise-grid">
+          <li>
+            <span class="expertise-num">i</span>
+            <h3>Macroeconomía aplicada</h3>
+            <p>Inflación, expectativas, política monetaria y crecimiento, con foco en la economía dominicana.</p>
+          </li>
+          <li>
+            <span class="expertise-num">ii</span>
+            <h3>Mercado de capitales</h3>
+            <p>Comportamiento de activos financieros, valoración y relación con variables macroeconómicas.</p>
+          </li>
+          <li>
+            <span class="expertise-num">iii</span>
+            <h3>Análisis econométrico</h3>
+            <p>Modelos de series de tiempo, racionalidad de expectativas, pruebas de sesgo y diagnóstico estadístico.</p>
+          </li>
+          <li>
+            <span class="expertise-num">iv</span>
+            <h3>Coyuntura y geopolítica</h3>
+            <p>Lectura crítica de la realidad nacional e internacional y sus efectos sobre la economía local.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publicaciones" class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">03</span>
+          <span class="eyebrow">Archivo</span>
+          <h2>Investigación y opinión.</h2>
+          <p class="section-sub">Selección de proyectos académicos y artículos publicados. Filtra por tipo o busca por tema, palabra clave o etiqueta.</p>
+        </header>
+
+        <div class="toolbar">
+          <div class="search-wrap">
+            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.5"/><path d="m14 14 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <input id="searchInput" type="search" placeholder="Buscar por título, tema o etiqueta…" aria-label="Buscar publicaciones" />
+          </div>
+
+          <div class="tabs" role="tablist" aria-label="Filtrar por tipo">
+            <button class="tab is-active" data-filter="todos" role="tab" aria-selected="true">Todos</button>
+            <button class="tab" data-filter="proyecto" role="tab" aria-selected="false">Investigación</button>
+            <button class="tab" data-filter="opinion" role="tab" aria-selected="false">Opinión</button>
+          </div>
+
+          <select id="sortFilter" aria-label="Ordenar publicaciones">
+            <option value="date-desc">Más recientes</option>
+            <option value="date-asc">Más antiguos</option>
+            <option value="title-asc">Título A–Z</option>
+            <option value="title-desc">Título Z–A</option>
+          </select>
         </div>
-   <div>
-   </div>
+
+        <div id="postsContainer" class="posts-grid" role="list"></div>
+        <div id="emptyState" class="empty-state hidden">
+          <h3>Sin resultados</h3>
+          <p>No se encontraron publicaciones que coincidan. Prueba otra búsqueda o ajusta los filtros.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="trayectoria" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">04</span>
+          <span class="eyebrow">Trayectoria</span>
+          <h2>Formación académica.</h2>
+        </header>
+
+        <ol class="timeline">
+          <li>
+            <span class="timeline-date">En curso</span>
+            <h3>Maestría en Finanzas — Mercado de Capitales</h3>
+            <p>Universidad Iberoamericana (UNIBE)</p>
+          </li>
+          <li>
+            <span class="timeline-date">Egresado</span>
+            <h3>Licenciatura en Economía</h3>
+            <p>Instituto Tecnológico de Santo Domingo (INTEC)</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contacto" class="section">
-      <div class="container contact-box">
-        <div>
-          <span class="eyebrow">CONTACTO</span>
-          <h2>Conecta conmigo</h2>
-        </div>
-        <div class="contact-items">           
-          <p><strong>Correo:</strong> realcesarmedina@gmail.com</p>
-          <p><strong>Teléfono:</strong> +1 829-840-8812</p>
-          <p><strong>LinkedIn:</strong> César Emilio Medina Tineo</p>
-          <p><strong>Ubicación:</strong> República Dominicana</p>
+      <div class="container">
+        <header class="section-head">
+          <span class="section-num">05</span>
+          <span class="eyebrow">Contacto</span>
+          <h2>Disponible para investigación, colaboraciones académicas y consultoría.</h2>
+        </header>
+
+        <div class="contact-card">
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Correo</span>
+              <a href="mailto:realcesarmedina@gmail.com">realcesarmedina@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-label">Teléfono</span>
+              <a href="tel:+18298408812">+1 829-840-8812</a>
+            </li>
+            <li>
+              <span class="contact-label">LinkedIn</span>
+              <span>César Emilio Medina Tineo</span>
+            </li>
+            <li>
+              <span class="contact-label">Ubicación</span>
+              <span>Santo Domingo · República Dominicana</span>
+            </li>
+          </ul>
+          <a class="btn contact-cta" href="mailto:realcesarmedina@gmail.com?subject=Contacto%20desde%20el%20portafolio">Escribir un correo <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> César Medina. Todos los derechos reservados.</p>
+      <div>
+        <p class="footer-name">César Medina Tineo</p>
+        <p class="footer-role">Economista · Investigador</p>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Todos los derechos reservados.</p>
     </div>
   </footer>
 
