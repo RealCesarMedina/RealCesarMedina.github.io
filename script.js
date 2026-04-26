@@ -77,12 +77,12 @@ const renderEntry = (post, index) => {
   li.innerHTML = `
     <span class="toc-num">${num}</span>
     <div class="toc-body">
-      <p class="toc-kicker"><span class="${escapeHtml(post.type)}">${escapeHtml(typeLabel)}</span> · ${year}</p>
+      <p class="toc-kicker">${escapeHtml(typeLabel)} · ${year}</p>
       <h3 class="toc-title">${escapeHtml(post.title)}</h3>
       <p class="toc-desc">${escapeHtml(post.description || '')}</p>
       <p class="toc-tags">${tags}</p>
     </div>
-    <span class="toc-link">Leer →</span>
+    <span class="toc-link">Leer</span>
     <a class="toc-card-link" href="${encodeURI(post.url || '#')}" target="${target}" rel="${rel}" aria-label="${escapeHtml(post.title)}"></a>
   `;
   return li;
