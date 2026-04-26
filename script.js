@@ -1,42 +1,49 @@
 /* ==========================================================
    César Medina Tineo — Portafolio profesional
-   Lógica de filtrado, búsqueda, contadores y revelado
+   Render de la Tabla de Contenidos (publicaciones),
+   pieza destacada, filtros y búsqueda.
    ========================================================== */
 
 const POSTS_URL = './data/posts.json';
 
 const TYPE_LABEL = {
   proyecto: 'Investigación',
-  opinion: 'Opinión',
+  opinion:  'Opinión',
 };
 
 const dom = {
   postsContainer: document.getElementById('postsContainer'),
-  emptyState: document.getElementById('emptyState'),
-  search: document.getElementById('searchInput'),
-  sort: document.getElementById('sortFilter'),
-  tabs: document.querySelectorAll('.tab'),
-  countAll: document.getElementById('count-all'),
-  countProjects: document.getElementById('count-projects'),
-  countOpinion: document.getElementById('count-opinion'),
-  featuredTitle: document.getElementById('featured-title'),
-  featuredDesc: document.getElementById('featured-description'),
-  featuredMeta: document.getElementById('featured-meta'),
-  featuredTags: document.getElementById('featured-tags'),
-  featuredLink: document.getElementById('featured-link'),
-  year: document.getElementById('year'),
-  scrollProgress: document.getElementById('scrollProgress'),
+  emptyState:     document.getElementById('emptyState'),
+  search:         document.getElementById('searchInput'),
+  sort:           document.getElementById('sortFilter'),
+  filters:        document.querySelectorAll('.filter'),
+  featuredTitle:  document.getElementById('featured-title'),
+  featuredDesc:   document.getElementById('featured-description'),
+  featuredMeta:   document.getElementById('featured-meta'),
+  featuredTags:   document.getElementById('featured-tags'),
+  featuredLink:   document.getElementById('featured-link'),
+  year:           document.getElementById('year'),
 };
 
 let posts = [];
 let activeType = 'todos';
 
+/* -----------------------
+   Utilidades
+   ----------------------- */
 const isExternal = url => /^https?:\/\//i.test(url || '');
 
 const formatDate = iso => {
   const d = new Date(iso);
   if (isNaN(d)) return '';
-  return d.toLocaleDateString('es-DO', { year: 'numeric', month: 'long', day: 'numeric' });
+  return d.toLocaleDateString('es-DO', {
+    year: 'numeric', month: 'long', day: 'numeric',
+  });
+};
+
+const formatYear = iso => {
+  const d = new Date(iso);
+  return isNaN(d) ? '—' : d.getFullYear();
 };
 
 const escapeHtml = (str = '') =>
@@ -48,51 +55,55 @@ const escapeHtml = (str = '') =>
     .replace(/'/g, '&#39;');
 
 /* -----------------------
-   Render
+   Render: entrada de TOC
    ----------------------- */
-const renderPostCard = post => {
-  const article = document.createElement('article');
-  article.className = 'post-card reveal';
-  article.setAttribute('role', 'listitem');
+const renderEntry = (post, index) => {
+  const li = document.createElement('li');
+  li.className = 'toc-entry reveal';
 
   const tags = (post.tags || [])
-    .map(t => `<span class="post-tag">${escapeHtml(t)}</span>`)
+    .map(t => `<span>${escapeHtml(t)}</span>`)
     .join('');
 
   const external = isExternal(post.url);
   const target = external ? '_blank' : '_self';
-  const rel = external ? 'noopener noreferrer' : '';
+  const rel    = external ? 'noopener noreferrer' : '';
 
-  article.innerHTML = `
-    <div class="post-meta">
-      <span class="post-type ${escapeHtml(post.type)}">${escapeHtml(TYPE_LABEL[post.type] || post.type)}</span>
-      <time datetime="${escapeHtml(post.date)}">${formatDate(post.date)}</time>
+  // Cifras antiguas con ceros a la izquierda: 01, 02, 03…
+  const num = String(index + 1).padStart(2, '0');
+  const year = formatYear(post.date);
+  const typeLabel = TYPE_LABEL[post.type] || post.type;
+
+  li.innerHTML = `
+    <span class="toc-num">${num}</span>
+    <div class="toc-body">
+      <p class="toc-kicker"><span class="${escapeHtml(post.type)}">${escapeHtml(typeLabel)}</span> · ${year}</p>
+      <h3 class="toc-title">${escapeHtml(post.title)}</h3>
+      <p class="toc-desc">${escapeHtml(post.description || '')}</p>
+      <p class="toc-tags">${tags}</p>
     </div>
-    <h3 class="post-title">${escapeHtml(post.title)}</h3>
-    <p class="post-desc">${escapeHtml(post.description || '')}</p>
-    <div class="post-tags">${tags}</div>
-    <span class="post-link">
-      ${external ? 'Leer artículo' : 'Abrir documento'}
-      <span class="post-arrow" aria-hidden="true">↗</span>
-    </span>
-    <a class="post-card-link" href="${encodeURI(post.url || '#')}" target="${target}" rel="${rel}" aria-label="${escapeHtml(post.title)}"></a>
+    <span class="toc-link">Leer →</span>
+    <a class="toc-card-link" href="${encodeURI(post.url || '#')}" target="${target}" rel="${rel}" aria-label="${escapeHtml(post.title)}"></a>
   `;
-  return article;
+  return li;
 };
 
+/* -----------------------
+   Render: pieza destacada
+   ----------------------- */
 const renderFeatured = () => {
   if (!posts.length) return;
   const sorted = [...posts].sort((a, b) => new Date(b.date) - new Date(a.date));
   const featured = sorted.find(p => p.featured) || sorted[0];
 
   dom.featuredTitle.textContent = featured.title;
-  dom.featuredDesc.textContent = featured.description || '';
-  dom.featuredMeta.textContent = `${TYPE_LABEL[featured.type] || ''} · ${formatDate(featured.date)}`;
+  dom.featuredDesc.textContent  = featured.description || '';
+  dom.featuredMeta.textContent  = `${TYPE_LABEL[featured.type] || ''} · ${formatDate(featured.date)}`;
 
   dom.featuredLink.href = featured.url || '#';
   if (isExternal(featured.url)) {
     dom.featuredLink.target = '_blank';
-    dom.featuredLink.rel = 'noopener noreferrer';
+    dom.featuredLink.rel    = 'noopener noreferrer';
   } else {
     dom.featuredLink.removeAttribute('target');
     dom.featuredLink.removeAttribute('rel');
@@ -100,32 +111,12 @@ const renderFeatured = () => {
 
   dom.featuredTags.innerHTML = (featured.tags || [])
     .slice(0, 4)
-    .map(t => `<span class="tag">${escapeHtml(t)}</span>`)
+    .map(t => `<li>${escapeHtml(t)}</li>`)
     .join('');
 };
 
-const animateCount = (el, target, ms = 900) => {
-  const start = performance.now();
-  const step = now => {
-    const t = Math.min(1, (now - start) / ms);
-    const eased = 1 - Math.pow(1 - t, 3);
-    el.textContent = Math.round(eased * target);
-    if (t < 1) requestAnimationFrame(step);
-  };
-  requestAnimationFrame(step);
-};
-
-const renderCounts = () => {
-  const total = posts.length;
-  const projects = posts.filter(p => p.type === 'proyecto').length;
-  const opinion = posts.filter(p => p.type === 'opinion').length;
-  animateCount(dom.countAll, total);
-  animateCount(dom.countProjects, projects);
-  animateCount(dom.countOpinion, opinion);
-};
-
 /* -----------------------
-   Filtros y orden
+   Filtros, búsqueda, orden
    ----------------------- */
 const applyFilters = () => {
   const q = dom.search.value.trim().toLowerCase();
@@ -141,11 +132,11 @@ const applyFilters = () => {
 
   filtered.sort((a, b) => {
     switch (sort) {
-      case 'date-asc': return new Date(a.date) - new Date(b.date);
-      case 'date-desc': return new Date(b.date) - new Date(a.date);
-      case 'title-asc': return a.title.localeCompare(b.title, 'es');
+      case 'date-asc':   return new Date(a.date) - new Date(b.date);
+      case 'date-desc':  return new Date(b.date) - new Date(a.date);
+      case 'title-asc':  return a.title.localeCompare(b.title, 'es');
       case 'title-desc': return b.title.localeCompare(a.title, 'es');
-      default: return 0;
+      default:           return 0;
     }
   });
 
@@ -155,7 +146,7 @@ const applyFilters = () => {
     return;
   }
   dom.emptyState.classList.add('hidden');
-  filtered.forEach(p => dom.postsContainer.appendChild(renderPostCard(p)));
+  filtered.forEach((p, i) => dom.postsContainer.appendChild(renderEntry(p, i)));
   observeReveal();
 };
 
@@ -182,31 +173,19 @@ const observeReveal = () => {
 /* -----------------------
    UI bindings
    ----------------------- */
-const initTabs = () => {
-  dom.tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      dom.tabs.forEach(t => {
-        t.classList.remove('is-active');
-        t.setAttribute('aria-selected', 'false');
+const initFilters = () => {
+  dom.filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      dom.filters.forEach(b => {
+        b.classList.remove('is-active');
+        b.setAttribute('aria-selected', 'false');
       });
-      tab.classList.add('is-active');
-      tab.setAttribute('aria-selected', 'true');
-      activeType = tab.dataset.filter;
+      btn.classList.add('is-active');
+      btn.setAttribute('aria-selected', 'true');
+      activeType = btn.dataset.filter;
       applyFilters();
     });
   });
-};
-
-const initScrollProgress = () => {
-  if (!dom.scrollProgress) return;
-  const update = () => {
-    const h = document.documentElement;
-    const max = h.scrollHeight - h.clientHeight;
-    const ratio = max > 0 ? h.scrollTop / max : 0;
-    dom.scrollProgress.style.width = `${Math.max(0, Math.min(1, ratio)) * 100}%`;
-  };
-  document.addEventListener('scroll', update, { passive: true });
-  update();
 };
 
 /* -----------------------
@@ -214,8 +193,7 @@ const initScrollProgress = () => {
    ----------------------- */
 const init = async () => {
   if (dom.year) dom.year.textContent = new Date().getFullYear();
-  initTabs();
-  initScrollProgress();
+  initFilters();
 
   try {
     const res = await fetch(POSTS_URL, { cache: 'no-store' });
@@ -225,7 +203,6 @@ const init = async () => {
     posts = [];
   }
 
-  renderCounts();
   renderFeatured();
   applyFilters();
 
