@@ -8,18 +8,18 @@
     "tags": ["Economía", "Macroeconomía", "Inflación"],
     "url": "./assets/docs/Exp_InflacionRD.pdf",
     "secondaryUrl": "",
+    "featured": false
+  },
+  {
+    "id": 2,
+    "type": "opinion",
+    "title": "La meta de inflación bajo asedio",
+    "date": "2026-04-24",
+    "description": "El choque petrolero proveniente del conflicto entre Estados Unidos e Irán pone a prueba el régimen de metas de inflación. La autoridad monetaria debe resistir la tentación de subordinar la estabilidad de precios al crecimiento de corto plazo.",
+    "tags": ["Política Monetaria", "Inflación", "Banco Central", "Petróleo", "Geopolítica"],
+    "url": "./articles/meta-inflacion-asedio.html",
     "featured": true
   },
- {
-  "id": 2,
-  "type": "opinion",
-  "title": "Camino a la incertidumbre",
-  "date": "2026-03-24",
-  "description": "Reflexión sobre cómo las favorables proyecciones de crecimiento para la economía dominicana en 2026 quedaron condicionadas por el deterioro del entorno internacional, el conflicto en torno a Irán, la volatilidad del petróleo y la fragilidad de las expectativas macroeconómicas.",
-  "tags": ["Opinión", "Economía dominicana", "Petróleo", "Geopolítica", "Incertidumbre"],
-  "url": "https://cesaremedina.blogspot.com/2026/03/camino-la-incertidumbre.html",
-  "featured": true
-},
   {
     "id": 3,
     "type": "proyecto",
