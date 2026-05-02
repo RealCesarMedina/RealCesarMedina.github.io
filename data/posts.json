@@ -1,26 +1,23 @@
-{
-  "posts": [
-    {
-      "id": 1,
-      "type": "opinion",
-      "title": "La meta de inflación bajo asedio",
-      "date": "2026-04-24",
-      "description": "El choque petrolero proveniente del conflicto entre Estados Unidos e Irán pone a prueba el régimen de metas de inflación. La autoridad monetaria debe resistir la tentación de subordinar la estabilidad de precios al crecimiento de corto plazo.",
-      "tags": ["Política Monetaria", "Inflación", "Banco Central", "Petróleo", "Geopolítica"],
-      "url": "./articles/meta-inflacion-asedio.html",
-      "secondaryUrl": "",
-      "featured": false
-    },
-    {
-      "id": 2,
-      "type": "proyecto",
-      "title": "Expectativas de inflación y rigidez informacional: evidencia dominicana, 2010–2026",
-      "date": "2026-05-01",
-      "description": "Evaluación de la racionalidad y la rigidez informacional de las expectativas de inflación del consenso de analistas del Banco Central de la República Dominicana (junio 2010 – marzo 2026, N = 190). El estudio documenta predictibilidad sistemática del error de pronóstico a partir de la tasa de política monetaria rezagada, con pruebas econométricas estándar complementadas por tests de cambio estructural y evaluación predictiva fuera de muestra.",
-      "tags": ["Macroeconomía", "Expectativas de Inflación", "Política Monetaria", "Econometría", "Banco Central"],
-      "url": "./assets/docs/expectativas-inflacion-rigidez-informacional.pdf",
-      "secondaryUrl": "",
-      "featured": true
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "type": "opinion",
+    "title": "La meta de inflación bajo asedio",
+    "date": "2026-04-24",
+    "description": "El choque petrolero proveniente del conflicto entre Estados Unidos e Irán pone a prueba el régimen de metas de inflación. La autoridad monetaria debe resistir la tentación de subordinar la estabilidad de precios al crecimiento de corto plazo.",
+    "tags": ["Política Monetaria", "Inflación", "Banco Central", "Petróleo", "Geopolítica"],
+    "url": "./articles/meta-inflacion-asedio.html",
+    "featured": false
+  },
+  {
+    "id": 2,
+    "type": "proyecto",
+    "title": "Expectativas de inflación y rigidez informacional: evidencia dominicana, 2010–2026",
+    "date": "2026-05-01",
+    "description": "Evaluación de la racionalidad y la rigidez informacional de las expectativas de inflación del consenso de analistas del Banco Central de la República Dominicana (junio 2010 – marzo 2026, N = 190). El estudio documenta predictibilidad sistemática del error de pronóstico a partir de la tasa de política monetaria rezagada, con pruebas econométricas estándar complementadas por tests de cambio estructural y evaluación predictiva fuera de muestra.",
+    "tags": ["Macroeconomía", "Expectativas de Inflación", "Política Monetaria", "Econometría", "Banco Central"],
+    "url": "./assets/docs/expectativas-inflacion-rigidez-informacional.pdf",
+    "secondaryUrl": "",
+    "featured": true
+  }
+]
