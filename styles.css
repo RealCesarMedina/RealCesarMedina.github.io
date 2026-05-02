@@ -165,6 +165,8 @@ a:hover { color: var(--accent); }
   border: 1px solid var(--rule);
   /* Tono cálido sutil para integrar con el papel */
   filter: contrast(0.98);
+  /* Sombra suave: la foto descansa sobre el papel sin gritar */
+  box-shadow: 0 24px 48px -28px rgba(20, 19, 15, 0.22);
 }
 /* Caption tipo etiqueta de museo */
 .lead-portrait figcaption {
@@ -260,6 +262,47 @@ a:hover { color: var(--accent); }
   transition: color .2s, border-color .2s;
 }
 .sidebar-cta:hover { color: var(--accent); border-color: var(--accent); }
+
+/* Cita editorial bajo la pieza destacada — equilibra la columna
+   derecha con la columna izquierda (que carga el retrato). */
+.sidebar-quote {
+  margin: clamp(40px, 5vw, 60px) 0 0;
+  padding: 28px 0 0;
+  border-top: 1px solid var(--ink);
+}
+.sidebar-quote p {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+  line-height: 1.4;
+  color: var(--ink);
+  margin: 0 0 18px;
+  letter-spacing: -0.005em;
+}
+.sidebar-quote footer {
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: baseline;
+}
+.sidebar-quote cite { font-style: normal; }
+.sidebar-quote cite a {
+  color: var(--ink-2);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1px;
+  transition: color .2s ease, border-color .2s ease;
+}
+.sidebar-quote cite a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
 
 /* ==========================================================
    SECCIONES
