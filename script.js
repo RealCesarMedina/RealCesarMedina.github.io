@@ -33,17 +33,27 @@ let activeType = 'todos';
    ----------------------- */
 const isExternal = url => /^https?:\/\//i.test(url || '');
 
+// Parsea una fecha "YYYY-MM-DD" como fecha local (no UTC) para evitar
+// que zonas horarias negativas la corran un día atrás (p. ej. 2026-05-01
+// mostrándose como "30 de abril" en GMT-4).
+const parseLocalDate = iso => {
+  if (!iso) return null;
+  const m = String(iso).match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return null;
+  return new Date(parseInt(m[1], 10), parseInt(m[2], 10) - 1, parseInt(m[3], 10));
+};
+
 const formatDate = iso => {
-  const d = new Date(iso);
-  if (isNaN(d)) return '';
+  const d = parseLocalDate(iso);
+  if (!d) return '';
   return d.toLocaleDateString('es-DO', {
     year: 'numeric', month: 'long', day: 'numeric',
   });
 };
 
 const formatYear = iso => {
-  const d = new Date(iso);
-  return isNaN(d) ? '—' : d.getFullYear();
+  const d = parseLocalDate(iso);
+  return d ? d.getFullYear() : '—';
 };
 
 const escapeHtml = (str = '') =>
