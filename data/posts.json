@@ -1,34 +1,23 @@
 [
   {
     "id": 1,
-    "type": "proyecto",
-    "title": "Análisis de la Racionalidad y Sesgo en las Expectativas de Inflación en la República Dominicana",
-    "date": "2025-08-24",
-    "description": "Análisis econométrico de la racionalidad y sesgos en las expectativas de inflación de los agentes económicos en la República Dominicana.",
-    "tags": ["Economía", "Macroeconomía", "Inflación"],
-    "url": "./assets/docs/Exp_InflacionRD.pdf",
-    "secondaryUrl": "",
-    "featured": false
-  },
-  {
-    "id": 2,
     "type": "opinion",
     "title": "La meta de inflación bajo asedio",
     "date": "2026-04-24",
     "description": "El choque petrolero proveniente del conflicto entre Estados Unidos e Irán pone a prueba el régimen de metas de inflación. La autoridad monetaria debe resistir la tentación de subordinar la estabilidad de precios al crecimiento de corto plazo.",
     "tags": ["Política Monetaria", "Inflación", "Banco Central", "Petróleo", "Geopolítica"],
     "url": "./articles/meta-inflacion-asedio.html",
-    "featured": true
+    "featured": false
   },
   {
-    "id": 3,
+    "id": 2,
     "type": "proyecto",
-    "title": "Interacción Dinámica entre Indicadores Macroeconómicos y el Precio de los Activos Financieros en el Mercado de Valores Dominicano",
-    "date": "2025-10-13",
-    "description": "Análisis econométrico de la relación dinámica entre variables macroeconómicas y el mercado de valores dominicano durante el período 2014-2024.",
-    "tags": ["Investigación", "Macroeconomía", "Mercado de Valores"],
-    "url": "./assets/docs/Interacción Dinámica entre Indicadores Macroeconómicos y el Precio de los Activos Financieros en el Mercado de Valores Dominicano.pdf",
+    "title": "Expectativas de inflación y rigidez informacional: evidencia dominicana, 2010–2026",
+    "date": "2026-05-01",
+    "description": "Evaluación de la racionalidad y la rigidez informacional de las expectativas de inflación del consenso de analistas del Banco Central de la República Dominicana (junio 2010 – marzo 2026, N = 190). El estudio documenta predictibilidad sistemática del error de pronóstico a partir de la tasa de política monetaria rezagada, con pruebas econométricas estándar complementadas por tests de cambio estructural y evaluación predictiva fuera de muestra.",
+    "tags": ["Macroeconomía", "Expectativas de Inflación", "Política Monetaria", "Econometría", "Banco Central"],
+    "url": "./assets/docs/expectativas-inflacion-rigidez-informacional.pdf",
     "secondaryUrl": "",
-    "featured": false
+    "featured": true
   }
 ]
