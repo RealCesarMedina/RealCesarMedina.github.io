@@ -197,7 +197,9 @@ const init = async () => {
 
   try {
     const res = await fetch(POSTS_URL, { cache: 'no-store' });
-    posts = await res.json();
+    const data = await res.json();
+    // Soporta dos formatos: array al raíz o { posts: [...] } (formato del CMS)
+    posts = Array.isArray(data) ? data : (data.posts || []);
   } catch (e) {
     console.error('Error cargando publicaciones:', e);
     posts = [];
