@@ -19,5 +19,15 @@
     "url": "./assets/docs/expectativas-inflacion-rigidez-informacional.pdf",
     "secondaryUrl": "",
     "featured": true
+  },
+  {
+    "id": 3,
+    "type": "opinion",
+    "title": "El costo fiscal del combustible",
+    "date": "2026-05-02",
+    "description": "El choque petrolero derivado del cierre del estrecho de Ormuz desnuda los costos del subsidio universal a los combustibles. El plan de austeridad anunciado por el gobierno es un paso necesario, pero insuficiente sin reformas estructurales.",
+    "tags": ["Política Fiscal", "Subsidios", "Petróleo", "Deuda Pública", "Geopolítica"],
+    "url": "./articles/costo-fiscal-combustible.html",
+    "featured": true
   }
 ]
