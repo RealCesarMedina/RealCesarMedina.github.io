@@ -29,5 +29,15 @@
     "tags": ["Política Fiscal", "Subsidios", "Petróleo", "Deuda Pública", "Geopolítica"],
     "url": "./articles/costo-fiscal-combustible.html",
     "featured": true
+  },
+  {
+    "id": 4,
+    "type": "opinion",
+    "title": "La renta que se fue por la puerta",
+    "date": "2026-05-10",
+    "description": "La paralización del proyecto Romero priva al fisco dominicano de una fuente potencial de renta extraordinaria, justo en el momento en que el oro alcanza precios sin precedentes y la presión tributaria nacional figura entre las más bajas de América Latina.",
+    "tags": ["Política Fiscal", "Minería", "Tributación", "Inversión Extranjera", "Recursos Naturales"],
+    "url": "./articles/renta-que-se-fue.html",
+    "featured": true
   }
 ]
