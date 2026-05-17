@@ -39,5 +39,15 @@
     "tags": ["Política Fiscal", "Minería", "Tributación", "Inversión Extranjera", "Recursos Naturales"],
     "url": "./articles/renta-que-se-fue.html",
     "featured": true
+  },
+  {
+    "id": 5,
+    "type": "opinion",
+    "title": "El ancla que se soltó",
+    "date": "2026-05-15",
+    "description": "La inflación interanual de abril rompe una racha de 35 meses dentro del rango meta y obliga al Banco Central a elegir entre la coherencia institucional y la presión por sostener el crecimiento. La decisión que tome en junio definirá su credibilidad para los próximos cinco años.",
+    "tags": ["Política Monetaria", "Inflación", "Banco Central", "Credibilidad", "Tasa de Interés"],
+    "url": "./articles/ancla-que-se-solto.html",
+    "featured": true
   }
 ]
