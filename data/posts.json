@@ -49,5 +49,15 @@
     "tags": ["Política Monetaria", "Inflación", "Banco Central", "Credibilidad", "Tasa de Interés"],
     "url": "./articles/ancla-que-se-solto.html",
     "featured": true
+  },
+  {
+    "id": 6,
+    "type": "opinion",
+    "title": "Crecer sin formalizar",
+    "date": "2026-05-24",
+    "description": "La economía dominicana sumó casi 119 mil empleos en el primer trimestre del año. Ocho de cada diez se crearon fuera del sistema formal. La cifra obliga a preguntarse qué clase de crecimiento estamos midiendo cuando celebramos el crecimiento.",
+    "tags": ["Mercado Laboral", "Informalidad", "Reforma Laboral", "Cesantía", "Política Económica"],
+    "url": "./articles/crecer-sin-formalizar.html",
+    "featured": true
   }
 ]
