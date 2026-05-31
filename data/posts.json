@@ -59,5 +59,15 @@
     "tags": ["Mercado Laboral", "Informalidad", "Reforma Laboral", "Cesantía", "Política Económica"],
     "url": "./articles/crecer-sin-formalizar.html",
     "featured": true
+  },
+  {
+    "id": 7,
+    "type": "opinion",
+    "title": "El subsidio que se subsidia a sí mismo",
+    "date": "2026-05-31",
+    "description": "El sector eléctrico dominicano consumió 48 mil millones de pesos del presupuesto en apenas cuatro meses. La cifra es alarmante, pero la conversación interesante empieza cuando se pregunta qué porción de ese dinero financia electricidad y qué porción financia ineficiencia.",
+    "tags": ["Política Fiscal", "Sector Eléctrico", "Subsidios", "Distribuidoras", "Eficiencia"],
+    "url": "./articles/subsidio-que-se-subsidia.html",
+    "featured": true
   }
 ]
