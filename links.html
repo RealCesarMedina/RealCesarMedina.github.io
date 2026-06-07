@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>César Medina Tineo — Enlaces</title>
+  <meta name="description" content="Enlaces y redes de César Emilio Medina Tineo, economista e investigador." />
+  <meta name="author" content="César Emilio Medina Tineo" />
+  <meta name="theme-color" content="#14130f" />
+
+  <meta property="og:title" content="César Medina Tineo — Enlaces" />
+  <meta property="og:description" content="Redes y enlaces de César Emilio Medina Tineo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_DO" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --paper:     #faf9f6;
+      --paper-dim: #f3f1ec;
+      --ink:       #14130f;
+      --ink-2:     #3a3833;
+      --rule:      #e2dfd7;
+      --accent:    #7a1416;
+      --muted:     #7a766c;
+      --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --font-body:    'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--font-body);
+      color: var(--ink-2);
+      background: var(--paper);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a { color: var(--ink); text-decoration: none; transition: color .2s ease, border-color .2s ease, background .2s ease; }
+    ::selection { background: var(--ink); color: var(--paper); }
+
+    .wrap {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+      padding: clamp(56px, 9vw, 96px) 28px 48px;
+      flex: 1;
+    }
+
+    /* Encabezado */
+    .lt-head { text-align: center; margin-bottom: clamp(36px, 6vw, 56px); }
+
+    .lt-monogram {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 24px;
+      border-radius: 50%;
+      background: var(--ink);
+      color: var(--paper);
+      display: grid;
+      place-items: center;
+      font-family: var(--font-display);
+      font-size: 1.9rem;
+      letter-spacing: 0.02em;
+    }
+
+    .lt-name {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: clamp(1.9rem, 6vw, 2.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin: 0 0 10px;
+      color: var(--ink);
+    }
+
+    .lt-sub {
+      font-family: var(--font-display);
+      font-style: italic;
+      color: var(--muted);
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
+    /* Lista de enlaces */
+    .lt-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px; }
+
+    .lt-link {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+      border-radius: 14px;
+      color: var(--ink);
+      font-weight: 500;
+      font-size: 1.02rem;
+    }
+    .lt-link:hover {
+      border-color: var(--ink);
+      background: var(--paper-dim);
+    }
+    .lt-link svg { width: 22px; height: 22px; flex: 0 0 22px; }
+    .lt-link .lt-label { flex: 1; }
+    .lt-link .lt-arrow { color: var(--muted); font-size: 1.1rem; }
+    .lt-link:hover .lt-arrow { color: var(--accent); }
+
+    /* Pie */
+    .lt-foot {
+      text-align: center;
+      padding: 28px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--rule);
+    }
+    .lt-foot a { color: var(--muted); border-bottom: 1px solid transparent; }
+    .lt-foot a:hover { color: var(--ink); border-color: var(--ink); }
+  </style>
+</head>
+<body>
+
+  <main class="wrap">
+    <header class="lt-head">
+      <div class="lt-monogram" aria-hidden="true">CM</div>
+      <h1 class="lt-name">César Medina Tineo</h1>
+      <p class="lt-sub">Economía · Finanzas · Investigación</p>
+    </header>
+
+    <ul class="lt-links">
+
+      <!-- Portafolio -->
+      <li>
+        <a class="lt-link" href="index.html#publicaciones">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+          </svg>
+          <span class="lt-label">Portafolio</span>
+          <span class="lt-arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+
+      <!-- LinkedIn -->
+      <li>
+        <a class="lt-link" href="https://www.linkedin.com/in/c%C3%A9sar-emilio-medina-tineo/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/>
+          </svg>
+          <span class="lt-label">LinkedIn</span>
+          <span class="lt-arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+
+      <!-- X (Twitter) -->
+      <li>
+        <a class="lt-link" href="https://x.com/realCesarMedina" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+          <span class="lt-label">X (Twitter)</span>
+          <span class="lt-arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+
+      <!-- Instagram -->
+      <li>
+        <a class="lt-link" href="https://www.instagram.com/realcesarmedina/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+          <span class="lt-label">Instagram</span>
+          <span class="lt-arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+
+      <!-- GitHub -->
+      <li>
+        <a class="lt-link" href="https://github.com/RealCesarMedina" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.21 11.19.6.11.82-.25.82-.56 0-.28-.01-1.02-.02-2-3.34.71-4.04-1.58-4.04-1.58-.55-1.37-1.33-1.74-1.33-1.74-1.09-.73.08-.72.08-.72 1.2.08 1.84 1.22 1.84 1.22 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.58-2.67-.3-5.47-1.31-5.47-5.84 0-1.29.47-2.34 1.23-3.17-.12-.3-.53-1.52.12-3.16 0 0 1-.32 3.3 1.21a11.6 11.6 0 0 1 6 0c2.3-1.53 3.3-1.21 3.3-1.21.65 1.64.24 2.86.12 3.16.77.83 1.23 1.88 1.23 3.17 0 4.54-2.8 5.53-5.48 5.83.43.36.81 1.08.81 2.18 0 1.57-.01 2.84-.01 3.23 0 .31.22.68.83.56A12.3 12.3 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/>
+          </svg>
+          <span class="lt-label">GitHub</span>
+          <span class="lt-arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+
+      <!-- Email -->
+      <li>
+        <a class="lt-link" href="mailto:realcesarmedina@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>
+          </svg>
+          <span class="lt-label">Correo</span>
+          <span class="lt-arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+
+    </ul>
+  </main>
+
+  <footer class="lt-foot">
+    <p>© <span id="year"></span> César Medina Tineo · Santo Domingo, R.D.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
