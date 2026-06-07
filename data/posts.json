@@ -79,5 +79,15 @@
     "tags": ["Turismo", "Encadenamientos", "Sector Externo", "Desarrollo Económico", "Política Económica"],
     "url": "./articles/lo-que-el-turismo-deja.html",
     "featured": true
+  },
+  {
+    "id": 9,
+    "type": "opinion",
+    "title": "El ajuste silencioso",
+    "date": "2026-06-07",
+    "description": "El presupuesto de 2026 contempla un déficit de 280 mil millones de pesos, equivalente al 3.2% del producto. La cifra es manejable. Lo preocupante no es su tamaño, sino la manera en que se está cerrando: recortando, en silencio, la inversión que pagaría el crecimiento de mañana.",
+    "tags": ["Política Fiscal", "Déficit", "Inversión Pública", "Deuda Pública", "Reforma Tributaria"],
+    "url": "./articles/el-ajuste-silencioso.html",
+    "featured": true
   }
 ]
