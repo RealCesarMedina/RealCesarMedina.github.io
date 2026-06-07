@@ -69,5 +69,15 @@
     "tags": ["Política Fiscal", "Sector Eléctrico", "Subsidios", "Distribuidoras", "Eficiencia"],
     "url": "./articles/subsidio-que-se-subsidia.html",
     "featured": true
+  },
+  {
+    "id": 8,
+    "type": "opinion",
+    "title": "Lo que el turismo deja",
+    "date": "2026-06-05",
+    "description": "El Banco Central proyecta que el turismo aportará más de doce mil quinientos millones de dólares este año, una cifra que merece celebrarse. La pregunta que sigue, menos cómoda, es cuánto de ese río de divisas se queda y circula dentro de la economía dominicana.",
+    "tags": ["Turismo", "Encadenamientos", "Sector Externo", "Desarrollo Económico", "Política Económica"],
+    "url": "./articles/lo-que-el-turismo-deja.html",
+    "featured": true
   }
 ]
