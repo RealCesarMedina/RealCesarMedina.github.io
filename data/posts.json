@@ -89,5 +89,15 @@
     "tags": ["Política Fiscal", "Déficit", "Inversión Pública", "Deuda Pública", "Reforma Tributaria"],
     "url": "./articles/el-ajuste-silencioso.html",
     "featured": true
+  },
+  {
+    "id": 10,
+    "type": "opinion",
+    "title": "Nada más permanente que un impuesto temporal",
+    "date": "2026-06-14",
+    "description": "El Gobierno presentó un paquete tributario para enfrentar el choque petrolero y la presión sobre las finanzas públicas. El debate se ha enredado en si es o no una reforma fiscal encubierta. Esa, en realidad, es la pregunta menos importante que puede hacerse.",
+    "tags": ["Política Fiscal", "Tributación", "Reforma Tributaria", "Subsidios", "Evasión Fiscal"],
+    "url": "./articles/nada-mas-permanente.html",
+    "featured": true
   }
 ]
