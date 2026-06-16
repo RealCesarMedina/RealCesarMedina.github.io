@@ -99,5 +99,15 @@
     "tags": ["Política Fiscal", "Tributación", "Reforma Tributaria", "Subsidios", "Evasión Fiscal"],
     "url": "./articles/nada-mas-permanente.html",
     "featured": true
+  },
+  {
+    "id": 11,
+    "type": "opinion",
+    "title": "El fin del coro",
+    "date": "2026-06-15",
+    "description": "Por primera vez en más de una década, los grandes bancos centrales del mundo deciden sus tasas en direcciones opuestas. En medio de esa desincronización, Kevin Warsh preside su primera reunión de la Reserva Federal con una idea inquietante: que el banco central debería hablar menos. Detrás de ambos hechos late la pregunta más antigua de la política monetaria.",
+    "tags": ["Política Monetaria", "Reserva Federal", "Bancos Centrales", "Credibilidad", "Deuda Soberana"],
+    "url": "./articles/el-fin-del-coro.html",
+    "featured": true
   }
 ]
