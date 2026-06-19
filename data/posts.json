@@ -109,5 +109,15 @@
     "tags": ["Política Monetaria", "Reserva Federal", "Bancos Centrales", "Credibilidad", "Deuda Soberana"],
     "url": "./articles/el-fin-del-coro.html",
     "featured": true
+  },
+  {
+    "id": 12,
+    "type": "opinion",
+    "title": "El peaje a la formalidad",
+    "date": "2026-06-18",
+    "description": "El Plan Anti-Crisis eleva el impuesto a los cheques y las transferencias del 0.15% al 0.20%. El alza parece menor, casi insignificante. Pero un tributo que encarece el uso del sistema financiero empuja, en silencio, hacia el efectivo y la informalidad, justo lo que el plan dice querer combatir.",
+    "tags": ["Política Fiscal", "Tributación", "Formalización", "Bancarización", "Plan Anti-Crisis"],
+    "url": "./articles/el-peaje-a-la-formalidad.html",
+    "featured": true
   }
 ]
