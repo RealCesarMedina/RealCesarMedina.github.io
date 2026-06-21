@@ -129,5 +129,15 @@
     "tags": ["Tipo de Cambio", "Sector Externo", "Exportaciones", "Remesas", "Competitividad"],
     "url": "./articles/las-dos-caras-de-un-precio.html",
     "featured": true
+  },
+  {
+    "id": 14,
+    "type": "opinion",
+    "title": "El ahorro cautivo",
+    "date": "2026-06-21",
+    "description": "La reforma de la seguridad social que el Gobierno prepara busca, con razón, mejorar unas pensiones demasiado bajas. Pero entre sus propuestas hay una que invierte el propósito de un fondo de pensiones: prohibirle invertir en el exterior para que financie el desarrollo nacional. Ese ahorro es del trabajador, y su único destino debería ser su vejez.",
+    "tags": ["Seguridad Social", "Pensiones", "AFP", "Represión Financiera", "Mercado de Capitales"],
+    "url": "./articles/el-ahorro-cautivo.html",
+    "featured": true
   }
 ]
