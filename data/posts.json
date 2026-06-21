@@ -119,5 +119,15 @@
     "tags": ["Política Fiscal", "Tributación", "Formalización", "Bancarización", "Plan Anti-Crisis"],
     "url": "./articles/el-peaje-a-la-formalidad.html",
     "featured": true
+  },
+  {
+    "id": 13,
+    "type": "opinion",
+    "title": "Las dos caras de un precio",
+    "date": "2026-06-20",
+    "description": "El peso dominicano se ha apreciado cerca de un 8% este año, y casi todos lo celebran como una victoria sobre la inflación importada. Lo es, en parte. Pero el tipo de cambio es un precio, y todo precio que favorece a unos perjudica a otros. Conviene mirar la cara que no se aplaude.",
+    "tags": ["Tipo de Cambio", "Sector Externo", "Exportaciones", "Remesas", "Competitividad"],
+    "url": "./articles/las-dos-caras-de-un-precio.html",
+    "featured": true
   }
 ]
