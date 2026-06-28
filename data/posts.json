@@ -149,5 +149,15 @@
     "tags": ["Sector Agropecuario", "Seguridad Alimentaria", "Agricultura", "Productividad", "Política Económica"],
     "url": "./articles/el-seguro-que-se-siembra.html",
     "featured": true
+  },
+  {
+    "id": 16,
+    "type": "opinion",
+    "title": "El privilegio que se gasta",
+    "date": "2026-06-28",
+    "description": "Por primera vez desde 1996, los bancos centrales del mundo prefieren el oro a la deuda de Estados Unidos como principal activo de reserva. El dato parece técnico, pero encierra un veredicto: el privilegio exorbitante del dólar, su capacidad de endeudarse barato con el planeta entero, no es un derecho de nacimiento, sino una confianza que se gasta.",
+    "tags": ["Economía Internacional", "Dólar", "Oro", "Bancos Centrales", "Reservas Internacionales"],
+    "url": "./articles/el-privilegio-que-se-gasta.html",
+    "featured": true
   }
 ]
