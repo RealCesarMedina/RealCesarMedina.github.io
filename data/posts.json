@@ -139,5 +139,15 @@
     "tags": ["Seguridad Social", "Pensiones", "AFP", "Represión Financiera", "Mercado de Capitales"],
     "url": "./articles/el-ahorro-cautivo.html",
     "featured": true
+  },
+  {
+    "id": 15,
+    "type": "opinion",
+    "title": "El seguro que se siembra",
+    "date": "2026-06-27",
+    "description": "Los agrónomos marcharon esta semana hacia el Palacio Nacional y fueron dispersados con gases. Más allá del reclamo salarial, la escena revela una contradicción: el país depende del campo para comer y para exportar, y a la vez lo trata como su gasto más prescindible. La seguridad alimentaria no se compra barata; se cultiva.",
+    "tags": ["Sector Agropecuario", "Seguridad Alimentaria", "Agricultura", "Productividad", "Política Económica"],
+    "url": "./articles/el-seguro-que-se-siembra.html",
+    "featured": true
   }
 ]
