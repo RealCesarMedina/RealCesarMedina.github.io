@@ -159,5 +159,15 @@
     "tags": ["Economía Internacional", "Dólar", "Oro", "Bancos Centrales", "Reservas Internacionales"],
     "url": "./articles/el-privilegio-que-se-gasta.html",
     "featured": true
+  },
+  {
+    "id": 17,
+    "type": "opinion",
+    "title": "Cohetes y plumas",
+    "date": "2026-07-05",
+    "description": "El petróleo se ha desplomado tras el acuerdo entre Estados Unidos e Irán, y con él se desvanece la crisis que justificó el nuevo paquete de impuestos. La pregunta ahora es doble: si el alivio llegará al surtidor o se quedará en el fisco, y si los impuestos que subieron con la emergencia sabrán bajar cuando se vaya.",
+    "tags": ["Política Fiscal", "Petróleo", "Subsidios", "Combustibles", "Tributación"],
+    "url": "./articles/cohetes-y-plumas.html",
+    "featured": true
   }
 ]
