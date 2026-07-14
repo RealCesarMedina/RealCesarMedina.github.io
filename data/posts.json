@@ -169,5 +169,15 @@
     "tags": ["Política Fiscal", "Petróleo", "Subsidios", "Combustibles", "Tributación"],
     "url": "./articles/cohetes-y-plumas.html",
     "featured": true
+  },
+  {
+    "id": 18,
+    "type": "opinion",
+    "title": "La gallina de los huevos de oro",
+    "date": "2026-07-13",
+    "description": "En la misma semana en que el país celebró un récord histórico de visitantes, empezó a cobrarse en cada boleto aéreo una tasa de salida cincuenta por ciento más cara. El Estado grava la puerta de entrada de su industria más exitosa, y la teoría económica tiene algo que decir sobre esa elección.",
+    "tags": ["Turismo", "Política Fiscal", "Competitividad", "Tributación", "Sector Externo"],
+    "url": "./articles/la-gallina-de-los-huevos-de-oro.html",
+    "featured": true
   }
 ]
