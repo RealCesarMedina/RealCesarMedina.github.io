@@ -179,5 +179,15 @@
     "tags": ["Turismo", "Política Fiscal", "Competitividad", "Tributación", "Sector Externo"],
     "url": "./articles/la-gallina-de-los-huevos-de-oro.html",
     "featured": true
+  },
+  {
+    "id": 19,
+    "type": "opinion",
+    "title": "Mejor que su nota",
+    "date": "2026-07-20",
+    "description": "El mercado cotiza la deuda dominicana con menos temor del que sugiere su calificación, y esa brecha es una oportunidad. El grado de inversión no se proclama: se gana sosteniendo la disciplina fiscal y evitando que la inflación erosione la confianza que el país ya empezó a cobrar.",
+    "tags": ["Deuda Soberana", "Calificación Crediticia", "Riesgo País", "Política Fiscal", "Grado de Inversión"],
+    "url": "./articles/mejor-que-su-nota.html",
+    "featured": true
   }
 ]
