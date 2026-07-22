@@ -189,5 +189,15 @@
     "tags": ["Deuda Soberana", "Calificación Crediticia", "Riesgo País", "Política Fiscal", "Grado de Inversión"],
     "url": "./articles/mejor-que-su-nota.html",
     "featured": true
+  },
+  {
+    "id": 20,
+    "type": "opinion",
+    "title": "Debajo de la cifra",
+    "date": "2026-07-21",
+    "description": "La inflación general dominicana lleva tres meses sobre la meta, pero la señal que preocupa no está en el titular, sino en la inflación subyacente, que ya roza el techo. El dato de junio sugiere que el choque de precios dejó de ser pasajero y empezó a filtrarse al fondo de la canasta, y ahí es donde una meta se juega su credibilidad.",
+    "tags": ["Política Monetaria", "Inflación", "Banco Central", "Inflación Subyacente", "Credibilidad"],
+    "url": "./articles/debajo-de-la-cifra.html",
+    "featured": true
   }
 ]
