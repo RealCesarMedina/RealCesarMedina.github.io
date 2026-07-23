@@ -199,5 +199,15 @@
     "tags": ["Política Monetaria", "Inflación", "Banco Central", "Inflación Subyacente", "Credibilidad"],
     "url": "./articles/debajo-de-la-cifra.html",
     "featured": true
+  },
+  {
+    "id": 21,
+    "type": "opinion",
+    "title": "Lo que no se importa",
+    "date": "2026-07-22",
+    "description": "Las zonas francas dominicanas resolvieron el problema para el que fueron creadas: atraer capital. Pero el obstáculo se movió, y hoy lo que decide una relocalización no es un punto más de exención sino si hay técnicos capaces de sostener la operación. Una economía puede importar máquinas; no puede importar el saber de su gente.",
+    "tags": ["Competitividad", "Zonas Francas", "Capital Humano", "Nearshoring", "Política Industrial"],
+    "url": "./articles/lo-que-no-se-importa.html",
+    "featured": true
   }
 ]
