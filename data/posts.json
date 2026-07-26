@@ -209,5 +209,15 @@
     "tags": ["Competitividad", "Zonas Francas", "Capital Humano", "Nearshoring", "Política Industrial"],
     "url": "./articles/lo-que-no-se-importa.html",
     "featured": true
+  },
+  {
+    "id": 22,
+    "type": "opinion",
+    "title": "Anatomía de un repunte",
+    "date": "2026-07-26",
+    "description": "La economía dominicana creció 6.4% en junio, el mejor registro del año, y el mérito no admite discusión. Pero al abrir el número aparece una firma monetaria: los sectores que más empujan son los que más dependen del crédito, y eso obliga a preguntarse si el precio del dinero está donde debería.",
+    "tags": ["Política Monetaria", "Crecimiento", "Crédito", "Banco Central", "Tasa de Interés"],
+    "url": "./articles/anatomia-de-un-repunte.html",
+    "featured": true
   }
 ]
