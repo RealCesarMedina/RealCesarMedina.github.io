@@ -219,5 +219,15 @@
     "tags": ["Política Monetaria", "Crecimiento", "Crédito", "Banco Central", "Tasa de Interés"],
     "url": "./articles/anatomia-de-un-repunte.html",
     "featured": true
+  },
+  {
+    "id": 23,
+    "type": "opinion",
+    "title": "La cuenta que nadie suma",
+    "date": "2026-08-03",
+    "description": "Se aprobaron impuestos nuevos para enfrentar una crisis. La recaudación superó la meta. Y el excedente, en lugar de cerrar la brecha que justificó el esfuerzo, terminó financiando más gasto y más deuda. Cada pieza, por separado, tiene su explicación. Es la suma la que no la tiene.",
+    "tags": ["Política Fiscal", "Tributación", "Gasto Público", "Deuda Pública", "Presupuesto"],
+    "url": "./articles/la-cuenta-que-nadie-suma.html",
+    "featured": true
   }
 ]
