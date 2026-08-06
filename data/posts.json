@@ -229,5 +229,15 @@
     "tags": ["Política Fiscal", "Tributación", "Gasto Público", "Deuda Pública", "Presupuesto"],
     "url": "./articles/la-cuenta-que-nadie-suma.html",
     "featured": true
+  },
+  {
+    "id": 24,
+    "type": "opinion",
+    "title": "Lo que sostiene las grúas",
+    "date": "2026-08-05",
+    "description": "La economía dominicana creció 6.4% en junio, su mejor mes del año, y una tercera parte de ese avance salió de la construcción. Detrás de las grúas hay crédito creciendo al doble de velocidad que el resto. Nada de eso indica una burbuja. Pero conviene saber qué se está mirando.",
+    "tags": ["Sector Financiero", "Construcción", "Crédito", "Banco Central", "Estabilidad Financiera"],
+    "url": "./articles/lo-que-sostiene-las-gruas.html",
+    "featured": true
   }
 ]
