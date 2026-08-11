@@ -239,5 +239,15 @@
     "tags": ["Sector Financiero", "Construcción", "Crédito", "Banco Central", "Estabilidad Financiera"],
     "url": "./articles/lo-que-sostiene-las-gruas.html",
     "featured": true
+  },
+  {
+    "id": 25,
+    "type": "opinion",
+    "title": "Dos puntos y medio",
+    "date": "2026-08-10",
+    "description": "Desde el 24 de julio, las exportaciones dominicanas hacia Estados Unidos pagan un arancel adicional de 12.5%. Guatemala, Honduras y El Salvador, nuestros competidores directos y socios del mismo tratado, pagan 10%. La diferencia parece pequeña. En la manufactura de exportación, casi nunca lo es.",
+    "tags": ["Comercio Exterior", "Aranceles", "Estados Unidos", "Zonas Francas", "Competitividad"],
+    "url": "./articles/dos-puntos-y-medio.html",
+    "featured": true
   }
 ]
