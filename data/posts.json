@@ -249,5 +249,15 @@
     "tags": ["Comercio Exterior", "Aranceles", "Estados Unidos", "Zonas Francas", "Competitividad"],
     "url": "./articles/dos-puntos-y-medio.html",
     "featured": true
+  },
+  {
+    "id": 26,
+    "type": "opinion",
+    "title": "La puerta estrecha",
+    "date": "2026-08-17",
+    "description": "El Congreso abrió su nueva legislatura con la reforma laboral otra vez en agenda. La discusión girará, como siempre, alrededor de proteger o desproteger al trabajador. Pero en un país donde la mayoría de los empleos nuevos nacen fuera del sistema, esa no es la pregunta.",
+    "tags": ["Mercado Laboral", "Reforma Laboral", "Informalidad", "Cesantía", "Pensiones"],
+    "url": "./articles/la-puerta-estrecha.html",
+    "featured": true
   }
 ]
