@@ -259,5 +259,15 @@
     "tags": ["Mercado Laboral", "Reforma Laboral", "Informalidad", "Cesantía", "Pensiones"],
     "url": "./articles/la-puerta-estrecha.html",
     "featured": true
+  },
+  {
+    "id": 27,
+    "type": "opinion",
+    "title": "El acusado que tiene razón",
+    "date": "2026-08-18",
+    "description": "El Banco Central publicó esta semana una defensa detallada frente a quienes lo acusan de haber fabricado la apreciación del peso. La defensa es sólida y sus datos son buenos. Pero demostrar que uno no provocó algo no es lo mismo que responder por sus consecuencias.",
+    "tags": ["Política Monetaria", "Tipo de Cambio", "Banco Central", "Transparencia", "Credibilidad"],
+    "url": "./articles/el-acusado-que-tiene-razon.html",
+    "featured": true
   }
 ]
