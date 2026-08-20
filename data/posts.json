@@ -269,5 +269,15 @@
     "tags": ["Política Monetaria", "Tipo de Cambio", "Banco Central", "Transparencia", "Credibilidad"],
     "url": "./articles/el-acusado-que-tiene-razon.html",
     "featured": true
+  },
+  {
+    "id": 28,
+    "type": "opinion",
+    "title": "La cifra que falta",
+    "date": "2026-08-19",
+    "description": "La inversión pública del primer semestre fue la más alta en siete años. Es una buena noticia y conviene decirlo sin reservas. Pero el país sabe con precisión cuánto invirtió y no tiene manera de saber qué le rindió, que es la única pregunta que al final importa.",
+    "tags": ["Política Fiscal", "Inversión Pública", "Infraestructura", "Transparencia", "Fideicomisos"],
+    "url": "./articles/la-cifra-que-falta.html",
+    "featured": true
   }
 ]
