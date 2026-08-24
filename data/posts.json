@@ -279,5 +279,15 @@
     "tags": ["Política Fiscal", "Inversión Pública", "Infraestructura", "Transparencia", "Fideicomisos"],
     "url": "./articles/la-cifra-que-falta.html",
     "featured": true
+  },
+  {
+    "id": 29,
+    "type": "opinion",
+    "title": "El eslabón invisible",
+    "date": "2026-08-20",
+    "description": "El país sufre apagones mientras desperdicia electricidad que ya produjo, porque las líneas que debían transportarla no dan abasto. El problema eléctrico dominicano dejó de ser solo de generación y de cobro. Se mudó al cable, que es lo único que nadie inaugura.",
+    "tags": ["Sector Eléctrico", "Transmisión", "Energía Renovable", "Infraestructura", "Inversión Pública"],
+    "url": "./articles/el-eslabon-invisible.html",
+    "featured": true
   }
 ]
