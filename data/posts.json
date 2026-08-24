@@ -289,5 +289,15 @@
     "tags": ["Sector Eléctrico", "Transmisión", "Energía Renovable", "Infraestructura", "Inversión Pública"],
     "url": "./articles/el-eslabon-invisible.html",
     "featured": true
+  },
+  {
+    "id": 30,
+    "type": "opinion",
+    "title": "La misma apuesta, tres veces",
+    "date": "2026-08-24",
+    "description": "El banco del Estado financia casi la mitad del crédito turístico del país. El turismo es también el mayor destino del ahorro previsional de los trabajadores en la economía real. Y es, además, la principal fuente de divisas. Ninguna de esas exposiciones es excesiva por separado. El problema es que las tres se mueven juntas.",
+    "tags": ["Sector Financiero", "Turismo", "Pensiones", "Riesgo Sistémico", "Banca"],
+    "url": "./articles/la-misma-apuesta-tres-veces.html",
+    "featured": true
   }
 ]
