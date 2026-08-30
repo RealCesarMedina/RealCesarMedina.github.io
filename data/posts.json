@@ -299,5 +299,15 @@
     "tags": ["Sector Financiero", "Turismo", "Pensiones", "Riesgo Sistémico", "Banca"],
     "url": "./articles/la-misma-apuesta-tres-veces.html",
     "featured": true
+  },
+  {
+    "id": 31,
+    "type": "opinion",
+    "title": "De dónde viene el precio",
+    "date": "2026-08-29",
+    "description": "Las megatiendas chinas transformaron el comercio dominicano y abarataron la vida de mucha gente. La pregunta que importa no es si compiten, sino de dónde sale su ventaja: si de vender mejor o de cumplir menos. Son dos cosas muy distintas y exigen respuestas opuestas.",
+    "tags": ["Comercio", "Competencia", "Evasión Fiscal", "Aduanas", "Formalización"],
+    "url": "./articles/de-donde-viene-el-precio.html",
+    "featured": true
   }
 ]
