@@ -309,5 +309,15 @@
     "tags": ["Comercio", "Competencia", "Evasión Fiscal", "Aduanas", "Formalización"],
     "url": "./articles/de-donde-viene-el-precio.html",
     "featured": true
+  },
+  {
+    "id": 32,
+    "type": "opinion",
+    "title": "El riel y el peaje",
+    "date": "2026-08-30",
+    "description": "El Banco Central construye una infraestructura de pagos instantáneos pensada para atraer al informal hacia el sistema financiero. Es una de las mejores decisiones de política pública del país en años. El problema es que otra mano del Estado le cobra peaje a quien la use.",
+    "tags": ["Inclusión Financiera", "Pagos Digitales", "Banco Central", "Formalización", "Bancarización"],
+    "url": "./articles/el-riel-y-el-peaje.html",
+    "featured": true
   }
 ]
