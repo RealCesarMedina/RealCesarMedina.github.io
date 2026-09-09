@@ -319,5 +319,15 @@
     "tags": ["Inclusión Financiera", "Pagos Digitales", "Banco Central", "Formalización", "Bancarización"],
     "url": "./articles/el-riel-y-el-peaje.html",
     "featured": true
+  },
+  {
+    "id": 33,
+    "type": "opinion",
+    "title": "El agua que no tiene precio",
+    "date": "2026-09-08",
+    "description": "La sequía obliga al país a repartir el agua entre los acueductos, el riego y las hidroeléctricas. Ese reparto se hace por comité, porque el insumo más valioso de la economía dominicana es el único que se administra sin señal de precio. Lo que escasea hoy es agua; lo que faltó siempre fue medida.",
+    "tags": ["Recursos Hídricos", "Sequía", "Agricultura", "Sector Eléctrico", "Precios"],
+    "url": "./articles/el-agua-que-no-tiene-precio.html",
+    "featured": true
   }
 ]
