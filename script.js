@@ -1,10 +1,12 @@
 /* ==========================================================
    César Medina Tineo — Portafolio profesional
    Render de la Tabla de Contenidos (publicaciones),
-   pieza destacada, filtros y búsqueda.
+   pieza destacada, filtros, búsqueda y paginación.
    ========================================================== */
 
 const POSTS_URL = './data/posts.json';
+
+const PER_PAGE = 10;
 
 const TYPE_LABEL = {
   proyecto: 'Investigación',
@@ -14,6 +16,7 @@ const TYPE_LABEL = {
 const dom = {
   postsContainer: document.getElementById('postsContainer'),
   emptyState:     document.getElementById('emptyState'),
+  pagination:     document.getElementById('pagination'),
   search:         document.getElementById('searchInput'),
   sort:           document.getElementById('sortFilter'),
   filters:        document.querySelectorAll('.filter'),
@@ -27,6 +30,8 @@ const dom = {
 
 let posts = [];
 let activeType = 'todos';
+let filtered = [];      // resultado actual de filtros + orden
+let currentPage = 1;
 
 /* -----------------------
    Utilidades
@@ -80,6 +85,8 @@ const renderEntry = (post, index) => {
   const rel    = external ? 'noopener noreferrer' : '';
 
   // Cifras antiguas con ceros a la izquierda: 01, 02, 03…
+  // El índice es global dentro del listado filtrado, así la numeración
+  // continúa de una página a la siguiente (11, 12… en la página 2).
   const num = String(index + 1).padStart(2, '0');
   const year = formatYear(post.date);
   const typeLabel = TYPE_LABEL[post.type] || post.type;
@@ -126,6 +133,118 @@ const renderFeatured = () => {
 };
 
 /* -----------------------
+   Paginación
+   ----------------------- */
+// Construye la secuencia de páginas a mostrar, con elipsis cuando hay muchas:
+// 1 … 4 5 [6] 7 8 … 20
+const pageWindow = (total, current) => {
+  if (total <= 7) {
+    return Array.from({ length: total }, (_, i) => i + 1);
+  }
+  const pages = new Set([1, total, current, current - 1, current + 1]);
+  const ordered = [...pages].filter(p => p >= 1 && p <= total).sort((a, b) => a - b);
+  const out = [];
+  let prev = 0;
+  for (const p of ordered) {
+    if (p - prev > 1) out.push('…');
+    out.push(p);
+    prev = p;
+  }
+  return out;
+};
+
+const goToPage = (n, { scroll = true } = {}) => {
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
+  currentPage = Math.min(Math.max(1, n), totalPages);
+  renderCurrentPage();
+  if (scroll) {
+    const anchor = document.getElementById('publicaciones');
+    if (anchor) anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+};
+
+const renderPagination = (totalPages) => {
+  if (!dom.pagination) return;
+  dom.pagination.innerHTML = '';
+  if (totalPages <= 1) return;
+
+  const makeBtn = (label, page, opts = {}) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'page-btn' + (opts.extra ? ' ' + opts.extra : '');
+    b.textContent = label;
+    if (opts.current) {
+      b.classList.add('is-current');
+      b.setAttribute('aria-current', 'page');
+    }
+    if (opts.disabled) {
+      b.disabled = true;
+    } else {
+      b.addEventListener('click', () => goToPage(page));
+    }
+    if (opts.ariaLabel) b.setAttribute('aria-label', opts.ariaLabel);
+    return b;
+  };
+
+  // Anterior
+  dom.pagination.appendChild(
+    makeBtn('‹', currentPage - 1, {
+      extra: 'page-arrow',
+      disabled: currentPage === 1,
+      ariaLabel: 'Página anterior',
+    })
+  );
+
+  // Números (con elipsis)
+  pageWindow(totalPages, currentPage).forEach(item => {
+    if (item === '…') {
+      const span = document.createElement('span');
+      span.className = 'page-ellipsis';
+      span.textContent = '…';
+      span.setAttribute('aria-hidden', 'true');
+      dom.pagination.appendChild(span);
+    } else {
+      dom.pagination.appendChild(
+        makeBtn(String(item), item, {
+          current: item === currentPage,
+          ariaLabel: `Página ${item}`,
+        })
+      );
+    }
+  });
+
+  // Siguiente
+  dom.pagination.appendChild(
+    makeBtn('›', currentPage + 1, {
+      extra: 'page-arrow',
+      disabled: currentPage === totalPages,
+      ariaLabel: 'Página siguiente',
+    })
+  );
+};
+
+const renderCurrentPage = () => {
+  dom.postsContainer.innerHTML = '';
+
+  if (filtered.length === 0) {
+    dom.emptyState.classList.remove('hidden');
+    if (dom.pagination) dom.pagination.innerHTML = '';
+    return;
+  }
+  dom.emptyState.classList.add('hidden');
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
+  if (currentPage > totalPages) currentPage = totalPages;
+
+  const start = (currentPage - 1) * PER_PAGE;
+  const slice = filtered.slice(start, start + PER_PAGE);
+
+  slice.forEach((p, i) => dom.postsContainer.appendChild(renderEntry(p, start + i)));
+  renderPagination(totalPages);
+  observeReveal();
+};
+
+/* -----------------------
    Filtros, búsqueda, orden
    ----------------------- */
 const applyFilters = () => {
@@ -133,7 +252,7 @@ const applyFilters = () => {
   const type = activeType;
   const sort = dom.sort.value;
 
-  let filtered = posts.filter(p => {
+  filtered = posts.filter(p => {
     if (type !== 'todos' && p.type !== type) return false;
     if (!q) return true;
     const haystack = [p.title, p.description, ...(p.tags || [])].join(' ').toLowerCase();
@@ -150,14 +269,9 @@ const applyFilters = () => {
     }
   });
 
-  dom.postsContainer.innerHTML = '';
-  if (filtered.length === 0) {
-    dom.emptyState.classList.remove('hidden');
-    return;
-  }
-  dom.emptyState.classList.add('hidden');
-  filtered.forEach((p, i) => dom.postsContainer.appendChild(renderEntry(p, i)));
-  observeReveal();
+  // Cualquier cambio de filtro/búsqueda/orden reinicia a la primera página.
+  currentPage = 1;
+  renderCurrentPage();
 };
 
 /* -----------------------
