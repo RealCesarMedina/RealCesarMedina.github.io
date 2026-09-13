@@ -329,5 +329,15 @@
     "tags": ["Recursos Hídricos", "Sequía", "Agricultura", "Sector Eléctrico", "Precios"],
     "url": "./articles/el-agua-que-no-tiene-precio.html",
     "featured": true
+  },
+  {
+    "id": 34,
+    "type": "opinion",
+    "title": "Lo que cuesta el plato",
+    "date": "2026-09-13",
+    "description": "Estados Unidos pidió esta semana derogar el decreto que protege el arroz dominicano con un arancel del 99%. Detrás de esa cifra hay treinta mil productores y una historia que merece respeto, pero también once millones de consumidores que pagan la cuenta sin enterarse.",
+    "tags": ["Comercio Exterior", "Aranceles", "Arroz", "Proteccionismo", "Seguridad Alimentaria"],
+    "url": "./articles/lo-que-cuesta-el-plato.html",
+    "featured": true
   }
 ]
