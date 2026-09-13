@@ -707,3 +707,63 @@ a:hover { color: var(--accent); }
   .reveal { opacity: 1; transform: none; transition: none; }
   html { scroll-behavior: auto; }
 }
+
+/* ==========================================================
+   Paginación de publicaciones
+   ========================================================== */
+.toc-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 48px;
+}
+.toc-pagination:empty { display: none; }
+
+.toc-pagination .page-btn {
+  min-width: 40px;
+  height: 40px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid var(--rule);
+  color: var(--ink-2);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: color .2s ease, border-color .2s ease, background .2s ease;
+}
+.toc-pagination .page-btn:hover:not(:disabled):not(.is-current) {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+.toc-pagination .page-btn.is-current {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+  cursor: default;
+}
+.toc-pagination .page-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.toc-pagination .page-arrow {
+  font-size: 16px;
+  line-height: 1;
+}
+.toc-pagination .page-ellipsis {
+  min-width: 24px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  user-select: none;
+}
+
+@media (max-width: 520px) {
+  .toc-pagination .page-btn { min-width: 36px; height: 36px; font-size: 12.5px; }
+}
