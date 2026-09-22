@@ -339,5 +339,15 @@
     "tags": ["Comercio Exterior", "Aranceles", "Arroz", "Proteccionismo", "Seguridad Alimentaria"],
     "url": "./articles/lo-que-cuesta-el-plato.html",
     "featured": true
+  },
+  {
+    "id": 35,
+    "type": "opinion",
+    "title": "El año bueno",
+    "date": "2026-09-21",
+    "description": "El presupuesto de 2027 propone un déficit de alrededor de 3.5% del PIB. No es más alto que el de este año, si se mide bien. Ese es precisamente el problema: el déficit no baja en el mejor momento del ciclo, que es el único en que bajarlo cuesta poco.",
+    "tags": ["Política Fiscal", "Presupuesto", "Déficit", "Deuda Pública", "Regla Fiscal"],
+    "url": "./articles/el-ano-bueno.html",
+    "featured": true
   }
 ]
