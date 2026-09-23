@@ -349,15 +349,5 @@
     "tags": ["Política Fiscal", "Presupuesto", "Déficit", "Deuda Pública", "Regla Fiscal"],
     "url": "./articles/el-ano-bueno.html",
     "featured": true
-  },
-  {
-    "id": 36,
-    "type": "opinion",
-    "title": "La última línea",
-    "date": "2026-09-22",
-    "description": "La primera empresa dominicana que colocó acciones en bolsa vendió casi veintitrés mil millones de pesos en 2025 y terminó el año ganando cuatro millones y medio. El episodio dice poco sobre una compañía y mucho sobre un mercado que apenas empieza a existir.",
-    "tags": ["Mercado de Capitales", "Bolsa de Valores", "Transparencia", "Tributación", "Pensiones"],
-    "url": "./articles/la-ultima-linea.html",
-    "featured": true
   }
 ]
