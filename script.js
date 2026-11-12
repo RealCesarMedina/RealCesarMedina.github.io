@@ -30,7 +30,7 @@ const renderWork = post => {
 
   const newTab = isExternal(post.url) || isPdf(post.url);
   const attrs = newTab ? ' target="_blank" rel="noopener noreferrer"' : '';
-  const kicker = [yearOf(post.date), isPdf(post.url) ? 'PDF' : ''].filter(Boolean).join(' · ');
+  const kicker = [yearOf(post.date), isPdf(post.url) ? 'PDF' : ''].filter(Boolean).join(' - ');
 
   li.innerHTML = `
     <p class="work-kicker">${escapeHtml(kicker)}</p>
